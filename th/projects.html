@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a09">
+  <title>แฟ้มผลงาน | Pumiput Chaichat</title>
+  <meta name="description" content="บันทึกภาพการเดินทางและเว็บไซต์ส่วนตัวของภูมิพัฒน์ ไชยชาติ">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&family=Italiana&family=Jost:wght@400;500;600&family=La+Belle+Aurore&family=Mali:wght@300&family=Montserrat:wght@700;800&family=Noto+Serif+Thai:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="../assets/favicon.svg?v=1781936404" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=1790325545">
+</head>
+<body class="page-portfolio">
+  <a href="#main" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <div class="page-loader" aria-hidden="true">
+    <span>Pumiput Chaichat</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <button class="menu-button" id="menuButton" type="button"
+            aria-label="เปิดเมนู"
+            data-open-label="เปิดเมนู"
+            data-close-label="ปิดเมนู"
+            aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="เมนูหลัก">
+      <div class="nav-item nav-home">
+        <a href="../th/index.html#home" aria-haspopup="true">Home</a>
+        <div class="nav-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Home">
+          <a href="../th/index.html#home"><span>01</span>หน้าแรก</a>
+          <a href="../th/index.html#journal"><span>02</span>บทนำ</a>
+          <a href="../th/index.html#moments"><span>03</span>บันทึกการเดินทาง</a>
+          <a href="../th/index.html#contact"><span>04</span>ข้อมูลติดต่อ</a>
+        </div>
+      </div>
+      <div class="nav-item nav-about">
+        <a href="../th/about.html#about" aria-haspopup="true">About Me</a>
+        <div class="nav-submenu" aria-label="ส่วนต่าง ๆ ของหน้า About">
+                      <a href="../th/about.html#about"><span>01</span>แนะนำตัว</a>
+                      <a href="../th/about.html#hobbies"><span>02</span>งานอดิเรก</a>
+                      <a href="../th/about.html#path"><span>03</span>เส้นทางการเติบโต</a>
+                  </div>
+      </div>
+      <div class="nav-item nav-portfolio">
+        <a href="#intro" aria-haspopup="true" aria-current="page">Portfolio</a>
+        <div class="nav-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Portfolio">
+                      <a href="#intro"><span>01</span>แนวทางการทำงาน</a>
+                      <a href="#skills"><span>02</span>การศึกษาและทักษะ</a>
+                      <a href="#experience"><span>03</span>ประสบการณ์และผลงาน</a>
+                  </div>
+      </div>
+      <a href="../th/index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="language-link" href="../projects.html"
+         aria-label="เปลี่ยนเป็นภาษาอังกฤษ">
+        EN      </a>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="เมนู">
+    <div class="mobile-menu-primary">
+      <div class="m-group">
+        <a class="m-group-trigger" href="../th/index.html#home" aria-haspopup="true" aria-expanded="false">Home</a>
+        <div class="mobile-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Home">
+          <a href="../th/index.html#home"><span>01</span>หน้าแรก</a>
+          <a href="../th/index.html#journal"><span>02</span>บทนำ</a>
+          <a href="../th/index.html#moments"><span>03</span>บันทึกการเดินทาง</a>
+          <a href="../th/index.html#contact"><span>04</span>ข้อมูลติดต่อ</a>
+        </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="../th/about.html#about" aria-haspopup="true" aria-expanded="false">About Me</a>
+        <div class="mobile-submenu" aria-label="ส่วนต่าง ๆ ของหน้า About">
+                      <a href="../th/about.html#about"><span>01</span>แนะนำตัว</a>
+                      <a href="../th/about.html#hobbies"><span>02</span>งานอดิเรก</a>
+                      <a href="../th/about.html#path"><span>03</span>เส้นทางการเติบโต</a>
+                  </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="#intro" aria-haspopup="true" aria-expanded="false" aria-current="page">Portfolio</a>
+        <div class="mobile-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Portfolio">
+                      <a href="#intro"><span>01</span>แนวทางการทำงาน</a>
+                      <a href="#skills"><span>02</span>การศึกษาและทักษะ</a>
+                      <a href="#experience"><span>03</span>ประสบการณ์และผลงาน</a>
+                  </div>
+      </div>
+      <a href="../th/index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main">
+<section class="page-band page-band-dark page-band-opening" id="intro" aria-labelledby="portfolio-page-title">
+  <div class="page-band-inner page-band-inner-wide pf-intro">
+    <h1 class="sr-only" id="portfolio-page-title">
+      แฟ้มผลงาน · ภูมิพัฒน์ ไชยชาติ, Software Engineer    </h1>
+    <div class="pf-row pf-intro-head" id="introHead">
+      <div class="pf-row-head">
+        <p class="about-role">Software Engineer</p>
+      </div>
+      <blockquote class="pf-lead"><p>สำหรับผม การเขียนโค้ดเป็นเพียงส่วนหนึ่งของงาน สิ่งสำคัญคือการเข้าใจปัญหาของผู้ใช้งาน และเปลี่ยนปัญหาเหล่านั้นให้กลายเป็นซอฟต์แวร์ที่ช่วยให้การทำงานง่ายขึ้น ปลอดภัยขึ้น และมีประสิทธิภาพมากขึ้น</p></blockquote>
+    </div>
+
+    <ol class="pf-rows">
+              <li class="pf-row reveal">
+          <div class="pf-row-head">
+            <span class="pf-row-no">01</span>
+            <h2 class="pf-row-title">เข้าใจงานก่อนเริ่มพัฒนา</h2>
+          </div>
+          <div class="pf-row-body">
+            <p>การทำงานในฐานะ Software Engineer (Full-Stack Developer) ผมเริ่มต้นจากการพูดคุยกับผู้ใช้งานและผู้ที่เกี่ยวข้อง เพื่อรับทราบปัญหา ศึกษากระบวนการทำงานเดิม และรวบรวมความต้องการ (Requirement Gathering) ก่อนนำข้อมูลมาวิเคราะห์ ออกแบบ Workflow และวางแผนการพัฒนาระบบให้สอดคล้องกับการดำเนินงานขององค์กร</p>
+                      </div>
+        </li>
+              <li class="pf-row reveal">
+          <div class="pf-row-head">
+            <span class="pf-row-no">02</span>
+            <h2 class="pf-row-title">มาตรฐานอุตสาหกรรม</h2>
+          </div>
+          <div class="pf-row-body">
+            <p>เนื่องจากผมทำงานในอุตสาหกรรมผลิตชิ้นส่วนยานยนต์ การพัฒนาระบบจึงต้องคำนึงถึงข้อกำหนดและมาตรฐานที่เกี่ยวข้อง เช่น ISO 9001, IATF 16949, ISO/IEC 27001 และ TISAX โดยให้ความสำคัญกับการควบคุมเอกสาร ความถูกต้องของข้อมูล การรักษาความปลอดภัยสารสนเทศ การกำหนดสิทธิ์การเข้าถึง และความสามารถในการตรวจสอบย้อนหลัง (Traceability) เพื่อให้ระบบสนับสนุนกระบวนการทำงานและแนวทางการบริหารจัดการขององค์กร</p>
+                          <ul class="pf-tags" aria-label="มาตรฐานอุตสาหกรรม">
+                <li>ISO 9001</li><li>IATF 16949</li><li>ISO/IEC 27001</li><li>TISAX</li>              </ul>
+                      </div>
+        </li>
+              <li class="pf-row reveal">
+          <div class="pf-row-head">
+            <span class="pf-row-no">03</span>
+            <h2 class="pf-row-title">ขอบเขตการพัฒนา</h2>
+          </div>
+          <div class="pf-row-body">
+            <p>ในด้านการพัฒนา ผมรับผิดชอบตั้งแต่การออกแบบฐานข้อมูล (Database Design) การพัฒนา Frontend และ Backend ด้วย PHP, Laravel, JavaScript และ MySQL ไปจนถึงการออกแบบ Business Logic การกำหนดสิทธิ์ผู้ใช้งาน (Role-Based Access Control) การจัดการกระบวนการอนุมัติ และการเชื่อมต่อข้อมูลระหว่างระบบ รวมถึงการทดสอบร่วมกับผู้ใช้งาน (User Acceptance Testing) การ Deploy และการบำรุงรักษาระบบหลังนำไปใช้งานจริง</p>
+                      </div>
+        </li>
+              <li class="pf-row reveal">
+          <div class="pf-row-head">
+            <span class="pf-row-no">04</span>
+            <h2 class="pf-row-title">ความปลอดภัยทางไซเบอร์</h2>
+          </div>
+          <div class="pf-row-body">
+            <p>ผมให้ความสำคัญกับความปลอดภัยตั้งแต่ขั้นตอนการออกแบบ ไม่ใช่เพิ่มเข้ามาภายหลัง ทั้งการกำหนดสิทธิ์ตามบทบาทและหลักการให้สิทธิ์เท่าที่จำเป็น (Least Privilege) การตรวจสอบข้อมูลที่รับเข้าระบบ การใช้ Prepared Statements ป้องกัน SQL Injection การป้องกัน XSS และ CSRF การเข้ารหัสรหัสผ่าน รวมถึงการบันทึก Audit Log เพื่อให้ตรวจสอบย้อนหลังได้ โดยอ้างอิงแนวทางอย่าง OWASP Top 10 เพื่อให้ระบบภายในองค์กรปลอดภัยและพร้อมรองรับข้อกำหนดด้านความปลอดภัยสารสนเทศ</p>
+                          <ul class="pf-tags" aria-label="ความปลอดภัยทางไซเบอร์">
+                <li>OWASP Top 10</li><li>Secure Coding</li><li>Least Privilege</li><li>Audit Log</li>              </ul>
+                      </div>
+        </li>
+              <li class="pf-row reveal">
+          <div class="pf-row-head">
+            <span class="pf-row-no">05</span>
+            <h2 class="pf-row-title">ผลงานที่ผ่านมา</h2>
+          </div>
+          <div class="pf-row-body">
+            <p>ตลอดหนึ่งปีที่ผ่านมา ผมได้พัฒนาระบบภายในองค์กรกว่า 10 ระบบ ซึ่งแต่ละโปรเจกต์มีความท้าทายแตกต่างกัน ทั้งการจัดการข้อมูลจำนวนมาก กระบวนการอนุมัติหลายระดับ และการเชื่อมต่อกับระบบเดิมขององค์กร ประสบการณ์เหล่านี้ช่วยพัฒนาทักษะด้าน Software Engineering และทำให้ผมเข้าใจการออกแบบซอฟต์แวร์ที่สามารถตอบโจทย์การทำงานจริงได้ดียิ่งขึ้น</p>
+                      </div>
+        </li>
+              <li class="pf-row reveal">
+          <div class="pf-row-head">
+            <span class="pf-row-no">06</span>
+            <h2 class="pf-row-title">ปรับตัวในยุค AI</h2>
+          </div>
+          <div class="pf-row-body">
+            <p>การมาของ AI ทำให้วิธีทำงานของนักพัฒนาเปลี่ยนไปอย่างรวดเร็ว ผมจึงนำเครื่องมืออย่าง Claude, ChatGPT, Codex, Gemini และ Copilot มาใช้ในงานประจำวัน ทั้งช่วยเขียนและตรวจสอบโค้ด ค้นหาสาเหตุของปัญหา และร่างเอกสาร เพื่อให้ส่งมอบงานได้เร็วขึ้น แต่ผมยังคงตรวจสอบผลลัพธ์ทุกครั้ง และยึดความเข้าใจในงานและความต้องการของผู้ใช้งานเป็นหลัก เพราะ AI เป็นเครื่องมือที่ช่วยให้ทำงานได้ดีขึ้น ไม่ใช่สิ่งที่มาแทนการคิดและการตัดสินใจ การเปลี่ยนแปลงนี้ทำให้ผมต้องเรียนรู้อยู่ตลอด และมองหาวิธีใหม่ ๆ ที่จะนำเทคโนโลยีมาสร้างประโยชน์ให้กับองค์กร</p>
+                      </div>
+        </li>
+          </ol>
+  </div>
+</section>
+
+<section class="page-band page-band-light" id="skills" aria-label="การศึกษาและทักษะ">
+  <div class="page-band-inner page-band-inner-wide">
+    <div class="pf-block pf-block-first" id="education">
+      <h3 class="pf-block-title reveal">การศึกษา</h3>
+      <div class="skill-panels skill-panels-3 edu-panels">
+                  <section class="skill-panel edu-panel reveal" style="--panel-order: 0" lang="en">
+            <div class="edu-logo edu-logo-thammasat" aria-hidden="true">
+                              <img src="../assets/images/education/thammasat.svg?v=1790319404" alt="" width="64" height="64">
+                          </div>
+            <p class="edu-level">Bachelor&#039;s Degree</p>
+            <h4 class="edu-school">Thammasat University</h4>
+            <p class="edu-place">Bangkok, Thailand</p>
+          </section>
+                  <section class="skill-panel edu-panel reveal" style="--panel-order: 1" lang="en">
+            <div class="edu-logo edu-logo-udonpittayanukoon" aria-hidden="true">
+                              <img src="../assets/images/education/udonpittayanukoon.png?v=1790319721" alt="" width="64" height="64">
+                          </div>
+            <p class="edu-level">High School</p>
+            <h4 class="edu-school">Udonpittayanukoon School</h4>
+            <p class="edu-place">Udon Thani, Thailand</p>
+          </section>
+                  <section class="skill-panel edu-panel reveal" style="--panel-order: 2" lang="en">
+            <div class="edu-logo edu-logo-don-bosco-wittaya" aria-hidden="true">
+                              <img src="../assets/images/education/don-bosco-wittaya.png?v=1790319677" alt="" width="64" height="64">
+                          </div>
+            <p class="edu-level">Primary School</p>
+            <h4 class="edu-school">Don Bosco Wittaya School</h4>
+            <p class="edu-place">Udon Thani, Thailand</p>
+          </section>
+              </div>
+    </div>
+
+    <div class="pf-block">
+      <h3 class="pf-block-title reveal">ทักษะด้านเทคนิค</h3>
+
+      <div class="skill-panels">
+                  <section class="skill-panel skill-panel-wide reveal" style="--panel-order: 0; --cols: 3">
+            <div class="item-head">
+              <span class="skill-panel-index">01</span>
+              <h4 class="skill-panel-title">Frontend Development</h4>
+            </div>
+            <p class="skill-panel-desc">พัฒนาส่วนติดต่อผู้ใช้งาน โดยเน้นความสะดวกในการใช้งานและรองรับอุปกรณ์หลายขนาด</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/html.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-note">โครงสร้างเว็บไซต์</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/css.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-note">ออกแบบเว็บไซต์ให้รองรับทุกหน้าจอ</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/javascript.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-note">พัฒนาการโต้ตอบของเว็บไซต์</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 3">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/typescript.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">TypeScript</span>
+                    <span class="skill-note">เขียน JavaScript แบบกำหนดชนิดข้อมูล</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 4">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/react.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">React</span>
+                    <span class="skill-note">สร้าง UI แบบ Component</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 5">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/nextjs.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Next.js</span>
+                    <span class="skill-note">พัฒนาเว็บแอปพลิเคชันด้วย React</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel skill-panel-wide reveal" style="--panel-order: 1; --cols: 4">
+            <div class="item-head">
+              <span class="skill-panel-index">02</span>
+              <h4 class="skill-panel-title">Backend Development</h4>
+            </div>
+            <p class="skill-panel-desc">พัฒนาระบบฝั่ง Server ออกแบบ Business Logic และเชื่อมต่อข้อมูลผ่าน API เพื่อรองรับการทำงานขององค์กร</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/php.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">PHP</span>
+                    <span class="skill-note">พัฒนาระบบ Backend</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/laravel.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Laravel</span>
+                    <span class="skill-note">พัฒนาเว็บแอปพลิเคชัน</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon" style="--app-bg: #2f3a34; --app-fg: #fff; --len: 3" aria-hidden="true">
+                                          <span class="skill-mono">API</span>
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">REST API</span>
+                    <span class="skill-note">ออกแบบและเชื่อมต่อ API</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 3">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/nodejs.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-note">พัฒนาระบบ Backend ด้วย JavaScript</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 4">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/python.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-note">เขียนสคริปต์และประมวลผลข้อมูล</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 5">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/java.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-note">การเขียนโปรแกรมเชิงวัตถุ</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 6">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/c.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">C</span>
+                    <span class="skill-note">พื้นฐานการเขียนโปรแกรม</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel skill-panel-wide reveal" style="--panel-order: 2; --cols: 4">
+            <div class="item-head">
+              <span class="skill-panel-index">03</span>
+              <h4 class="skill-panel-title">Database</h4>
+            </div>
+            <p class="skill-panel-desc">ออกแบบและจัดการฐานข้อมูล รวมถึงวิเคราะห์และนำเสนอข้อมูลเพื่อสนับสนุนการตัดสินใจ</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/mysql.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-note">ออกแบบและจัดการฐานข้อมูล</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/postgresql.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">PostgreSQL</span>
+                    <span class="skill-note">ออกแบบฐานข้อมูลเชิงสัมพันธ์</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/sqlserver.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">SQL Server</span>
+                    <span class="skill-note">จัดการฐานข้อมูลระดับองค์กร</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 3">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/mongodb.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">MongoDB</span>
+                    <span class="skill-note">จัดการฐานข้อมูลแบบ NoSQL</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel reveal" style="--panel-order: 3; --cols: 4">
+            <div class="item-head">
+              <span class="skill-panel-index">04</span>
+              <h4 class="skill-panel-title">Office &amp; Presentation</h4>
+            </div>
+            <p class="skill-panel-desc">จัดการข้อมูล จัดทำเอกสารทางเทคนิค และออกแบบสื่อนำเสนอสำหรับการทำงานภายในองค์กร</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/excel.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Excel</span>
+                    <span class="skill-note">วิเคราะห์ข้อมูลและจัดทำรายงาน</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/word.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Word</span>
+                    <span class="skill-note">จัดทำเอกสารและคู่มือระบบ</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/powerpoint.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">PowerPoint</span>
+                    <span class="skill-note">สร้างงานนำเสนอและสื่ออบรม</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 3">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/canva.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Canva</span>
+                    <span class="skill-note">ออกแบบกราฟิกและสื่อนำเสนอ</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel reveal" style="--panel-order: 4; --cols: 4">
+            <div class="item-head">
+              <span class="skill-panel-index">05</span>
+              <h4 class="skill-panel-title">AI Tools</h4>
+            </div>
+            <p class="skill-panel-desc">ประยุกต์ใช้ AI เพื่อสนับสนุนการเขียนโปรแกรม วิเคราะห์ปัญหา ออกแบบระบบ และเพิ่มประสิทธิภาพในการทำงาน</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/claude.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Claude</span>
+                    <span class="skill-note">พัฒนาโค้ดและออกแบบระบบ</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/chatgpt.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">ChatGPT &amp; Codex</span>
+                    <span class="skill-note">พัฒนาโค้ดและวิเคราะห์ปัญหา</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/gemini.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Gemini</span>
+                    <span class="skill-note">ค้นคว้าและวิเคราะห์ข้อมูล</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 3">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/copilot.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Copilot</span>
+                    <span class="skill-note">ช่วยเขียนและปรับปรุงโค้ด</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel skill-panel-wide reveal" style="--panel-order: 5; --cols: 4">
+            <div class="item-head">
+              <span class="skill-panel-index">06</span>
+              <h4 class="skill-panel-title">Development Tools</h4>
+            </div>
+            <p class="skill-panel-desc">ใช้เครื่องมือสำหรับการพัฒนา ออกแบบ ทดสอบ และจัดการซอฟต์แวร์ตลอดกระบวนการพัฒนา</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/git.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Git</span>
+                    <span class="skill-note">จัดการเวอร์ชันของซอร์สโค้ด</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/github.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">GitHub</span>
+                    <span class="skill-note">จัดการ Repository และทำงานร่วมกัน</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/aws.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">AWS</span>
+                    <span class="skill-note">พื้นฐานบริการ Cloud</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 3">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/xampp.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">XAMPP</span>
+                    <span class="skill-note">จำลองสภาพแวดล้อมสำหรับพัฒนาระบบ</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 4">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/figma.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Figma</span>
+                    <span class="skill-note">ออกแบบ UI และ Prototype</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 5">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/drawio.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">draw.io</span>
+                    <span class="skill-note">ออกแบบโครงสร้างและกระบวนการทำงาน</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 6">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/powerbi.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Power BI</span>
+                    <span class="skill-note">วิเคราะห์ข้อมูลและสร้าง Dashboard</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 7">
+                  <span class="skill-icon has-logo" aria-hidden="true">
+                                          <img src="../assets/images/skills/teams.svg" alt="" width="24" height="24">
+                                      </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Microsoft Teams</span>
+                    <span class="skill-note">สื่อสารและประสานงานกับทีม</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+              </div>
+    </div>
+
+    <div class="pf-block">
+      <h3 class="pf-block-title reveal">ทักษะทั่วไป</h3>
+
+      <div class="skill-panels skill-panels-3">
+                  <section class="skill-panel reveal" style="--panel-order: 0">
+            <div class="item-head">
+              <span class="skill-panel-index">01</span>
+              <h4 class="skill-panel-title">Analytical Thinking &amp; Learning</h4>
+            </div>
+            <p class="skill-panel-desc">วิเคราะห์ปัญหาอย่างเป็นระบบ พร้อมเรียนรู้เทคโนโลยีใหม่เพื่อพัฒนาความสามารถอย่างต่อเนื่อง</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3Z"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Problem Solving</span>
+                    <span class="skill-note">วิเคราะห์ปัญหาและพัฒนาแนวทางแก้ไข</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5zM12 6.5v13"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Self-Learning</span>
+                    <span class="skill-note">เรียนรู้และประยุกต์ใช้เทคโนโลยีใหม่</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel reveal" style="--panel-order: 1">
+            <div class="item-head">
+              <span class="skill-panel-index">02</span>
+              <h4 class="skill-panel-title">Software Development</h4>
+            </div>
+            <p class="skill-panel-desc">ออกแบบและพัฒนาซอฟต์แวร์ครบวงจร โดยคำนึงถึงประสิทธิภาพ ความปลอดภัย และการขยายระบบในอนาคต</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Full-Stack Development</span>
+                    <span class="skill-note">พัฒนาระบบทั้ง Frontend และ Backend</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3ZM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Database Design</span>
+                    <span class="skill-note">ออกแบบโครงสร้างและความสัมพันธ์ของข้อมูล</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 2">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6zM9 12l2 2 4-4"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Security-Aware Development</span>
+                    <span class="skill-note">ออกแบบระบบโดยคำนึงถึงความปลอดภัย</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+                  <section class="skill-panel reveal" style="--panel-order: 2">
+            <div class="item-head">
+              <span class="skill-panel-index">03</span>
+              <h4 class="skill-panel-title">User-Centered Development</h4>
+            </div>
+            <p class="skill-panel-desc">วิเคราะห์ความต้องการและทำงานร่วมกับผู้ใช้งาน เพื่อพัฒนาซอฟต์แวร์ที่ตอบโจทย์กระบวนการทำงานจริง</p>
+
+            <ul class="skill-list">
+                              <li class="skill-item" style="--i: 0">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4zM8 9h8M8 12h5"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">Requirement Gathering</span>
+                    <span class="skill-note">รวบรวมและวิเคราะห์ความต้องการจากผู้ใช้งาน</span>
+                  </span>
+                </li>
+                              <li class="skill-item" style="--i: 1">
+                  <span class="skill-icon skill-icon-line" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v11H3zM8 20h8M12 16v4M7 9h5M7 12h8"/></svg>
+                  </span>
+                  <span class="skill-text">
+                    <span class="skill-name">UX/UI &amp; User Analysis</span>
+                    <span class="skill-note">วิเคราะห์พฤติกรรมและออกแบบประสบการณ์ผู้ใช้งาน</span>
+                  </span>
+                </li>
+                          </ul>
+          </section>
+              </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-band page-band-dark" id="experience" aria-label="ประสบการณ์">
+  <div class="page-band-inner">
+    <ol class="xp-list">
+              <li class="xp-role reveal" id="xp-company">
+          <p class="xp-period">เรียนจบ – ปัจจุบัน</p>
+
+          <div class="xp-body">
+            <h3 class="xp-title">Software Engineer (Full-Stack Developer)</h3>
+            <p class="xp-org">บริษัทผลิตชิ้นส่วนรถยนต์ · ภาคตะวันออก (Supavut Industry, Moldvanto, Sunaru)</p>
+
+                                                        <p class="xp-desc">ผมรับผิดชอบการวิเคราะห์ ออกแบบ และพัฒนาระบบภายในองค์กร ตั้งแต่การพูดคุยกับผู้ใช้งานและหัวหน้าแผนกเพื่อรับทราบปัญหาและรวบรวมความต้องการ (Requirement Gathering) การออกแบบ Workflow และฐานข้อมูล ไปจนถึงการพัฒนา Frontend และ Backend รวมถึงการทดสอบ การ Deploy และการดูแลระบบหลังนำไปใช้งานจริง</p>
+                              <p class="xp-desc">งานส่วนใหญ่ของผมมุ่งเน้นการปรับปรุงกระบวนการทำงานภายในองค์กร โดยเปลี่ยนขั้นตอนที่ซับซ้อนและการจัดการเอกสารแบบเดิมให้เป็นระบบดิจิทัล เช่น ระบบประเมินผลพนักงาน ระบบอนุมัติเอกสาร และระบบบริหารจัดการข้อมูล เพื่อช่วยลดระยะเวลาการทำงาน เพิ่มความถูกต้องของข้อมูล และสามารถตรวจสอบสถานะย้อนหลังได้</p>
+                          
+                          <ul class="xp-repos" aria-label="โปรเจค">
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/s-insight" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">S-Insight</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/sassessment" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">S-Assessment</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/penalty-bonus" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">Penalty-Bonus</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/okr-kpi-system" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">OKR-KPI-System</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/quote-compare" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">Quote-Compare</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/si-menu-intranet" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">SI-Menu-Intranet</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/s-portal" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">S-Portal</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/s-insight-showcase" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">S-Insight-Showcase</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/sbms" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">SBMS</span>
+                    </a>                  </li>
+                              </ul>
+            
+                          <ul class="xp-repos xp-highlights" aria-label="รางวัลและการอบรม">
+                                  <li>
+                    <a class="xp-repo" href="https://drive.google.com/file/d/163DtNLmayCmqC5mtN2QFj0xF7UaWtyL_/view?usp=sharing" target="_blank" rel="noopener">
+                      <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">
+                      <span class="xp-repo-name">รางวัลชนะเลิศ Kaizen ด้านการลดต้นทุน</span>
+                    </a>
+                  </li>
+                                  <li>
+                    <a class="xp-repo" href="https://drive.google.com/file/d/15MV_-xfhfcPtoZUVFU1v3uf3psXk3lNE/view?usp=sharing" target="_blank" rel="noopener">
+                      <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">
+                      <span class="xp-repo-name">วิทยากรอบรม Power BI</span>
+                    </a>
+                  </li>
+                              </ul>
+                      </div>
+        </li>
+              <li class="xp-role reveal" id="xp-university">
+          <p class="xp-period">ระหว่างเรียน</p>
+
+          <div class="xp-body">
+            <h3 class="xp-title">โปรเจคระหว่างเรียน</h3>
+            <p class="xp-org">มหาวิทยาลัยธรรมศาสตร์</p>
+
+                                                        <p class="xp-desc">ตลอดระยะเวลาที่ศึกษาอยู่ที่มหาวิทยาลัยธรรมศาสตร์ ผมได้เรียนรู้พื้นฐานด้านวิทยาการคอมพิวเตอร์ ตั้งแต่ Discrete Structures การเขียนโปรแกรมด้วยภาษา C และ Java โครงสร้างข้อมูลและอัลกอริทึม ไปจนถึงระบบฐานข้อมูล ระบบปฏิบัติการ สถาปัตยกรรมคอมพิวเตอร์ วิศวกรรมซอฟต์แวร์ ปัญญาประดิษฐ์ และสถิติสำหรับการวิเคราะห์ข้อมูล</p>
+                              <p class="xp-desc">นอกจากความรู้ในห้องเรียนแล้ว ผมยังมีโอกาสทำโปรเจกต์ร่วมกับเพื่อน ๆ ซึ่งช่วยให้ได้นำทฤษฎีมาประยุกต์ใช้จริง ทั้งการวิเคราะห์ปัญหา ออกแบบระบบ แบ่งหน้าที่รับผิดชอบ และพัฒนาซอฟต์แวร์ร่วมกัน ประสบการณ์เหล่านี้เป็นพื้นฐานสำคัญที่ผมนำมาต่อยอดในการทำงานจนถึงปัจจุบัน</p>
+                          
+                          <ul class="xp-repos" aria-label="โปรเจค">
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/FraudCheck_Project" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">FraudCheck-Project</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="https://github.com/PumiputCG/QuickCV_Project" target="_blank" rel="noopener">
+                                          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                      <span class="xp-repo-name">QuickCV-Project</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="../assets/files/pm25-dust-alert.pdf" target="_blank" rel="noopener">
+                                          <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">                      <span class="xp-repo-name">PM2.5 Dust Alert</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="../assets/files/bracelock-application-design.pdf" target="_blank" rel="noopener">
+                                          <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">                      <span class="xp-repo-name">Bracelock Application Design</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="../assets/files/tu-app-integration.pdf" target="_blank" rel="noopener">
+                                          <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">                      <span class="xp-repo-name">TU App Integration</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="../assets/files/idol-stage-term-project.pdf" target="_blank" rel="noopener">
+                                          <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">                      <span class="xp-repo-name">Term Project Idol Stage</span>
+                    </a>                  </li>
+                                  <li>
+                                        <a class="xp-repo" href="../assets/files/vaccine-reservation-system-design.pdf" target="_blank" rel="noopener">
+                                          <img src="../assets/images/icons/pdf.webp" alt="" width="16" height="20">                      <span class="xp-repo-name">Vaccine Reservation System Design</span>
+                    </a>                  </li>
+                              </ul>
+            
+                      </div>
+        </li>
+          </ol>
+
+    <div class="pf-block">
+      <h3 class="pf-block-title reveal">กิจกรรม</h3>
+      <ul class="pf-items">
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 3.8s">
+            <div class="photo-frame photo-frame-wide" data-photo-slider>
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/mentor-1.jpg?v=1790241372"
+                        alt="นักศึกษาฝึกงานนั่งทำงานในห้องประชุมพร้อมจอแสดงแผนงาน"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/mentor-2.jpg?v=1790241372"
+                        alt="ประชุมออนไลน์เรื่องโปรเจค DCC Hub ผ่านโน้ตบุ๊ก"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/mentor-3.jpg?v=1790241373"
+                        alt="อธิบายขั้นตอนการทำงานของระบบบนไวท์บอร์ด"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/mentor-4.jpg?v=1790241373"
+                        alt="นักศึกษาฝึกงานนำเสนอขั้นตอนการทำงานบนจอ"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                  </div>
+                
+            <button class="photo-nav photo-nav-prev" type="button" aria-label="ภาพก่อนหน้า">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="photo-nav photo-nav-next" type="button" aria-label="ภาพถัดไป">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>                          </div>
+
+                          <div class="photo-bars" role="group" aria-label="ภาพ พี่เลี้ยงนักศึกษาฝึกงาน">
+                                  <button type="button" class="is-active"
+                          aria-label="ภาพที่ 1 จาก 4"
+                          aria-current="true">
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 2 จาก 4"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 3 จาก 4"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 4 จาก 4"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                              </div>
+            
+            <h4 class="pf-item-title">พี่เลี้ยงนักศึกษาฝึกงาน</h4>
+            <p class="pf-item-desc">ผมมีโอกาสดูแลและให้คำปรึกษานักศึกษาฝึกงานจากมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (บางมด) ในการพัฒนาโปรเจกต์ DCC Hub ตั้งแต่การวางแผนงาน การออกแบบระบบ ไปจนถึงการพัฒนาซอฟต์แวร์ พร้อมถ่ายทอดประสบการณ์และแนวทางการทำงานจริงในองค์กร</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 4.2s">
+            <div class="photo-frame photo-frame-wide" data-photo-slider>
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/kaizen-1.jpg?v=1790241371"
+                        alt="รับมอบเกียรติบัตรรางวัลชนะเลิศ Kaizen หน้าโลโก้บริษัท"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/kaizen-2.jpg?v=1790241815"
+                        alt="เกียรติบัตรรางวัลชนะเลิศ ส่วนสำนักงาน จาก Supavut Industry"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/kaizen-3.jpg?v=1790241618"
+                        alt="รับมอบเกียรติบัตรรางวัลชนะเลิศ ส่วนสำนักงาน จากผู้บริหาร"
+                        width="689"
+                        height="828"
+                        loading="lazy"
+                        style="object-position: 50% 38%"                      >
+                    </figure>
+                                  </div>
+                
+            <button class="photo-nav photo-nav-prev" type="button" aria-label="ภาพก่อนหน้า">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="photo-nav photo-nav-next" type="button" aria-label="ภาพถัดไป">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>                          </div>
+
+                          <div class="photo-bars" role="group" aria-label="ภาพ รางวัลชนะเลิศการประกวด Kaizen">
+                                  <button type="button" class="is-active"
+                          aria-label="ภาพที่ 1 จาก 3"
+                          aria-current="true">
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 2 จาก 3"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 3 จาก 3"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                              </div>
+            
+            <h4 class="pf-item-title">รางวัลชนะเลิศการประกวด Kaizen</h4>
+            <p class="pf-item-desc">ผมเข้าร่วมการประกวด Kaizen ภายในบริษัท โดยนำเสนอผลงานการพัฒนาระบบเพื่อปรับปรุงกระบวนการทำงาน ลดขั้นตอนที่ไม่จำเป็น และช่วยลดต้นทุนขององค์กร ซึ่งผลงานดังกล่าวได้รับรางวัลชนะเลิศจากการแข่งขัน</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 4.6s">
+            <div class="photo-frame photo-frame-wide" data-photo-slider>
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/power-bi-1.jpg?v=1790241373"
+                        alt="สอนการใช้ Power BI ให้พนักงานในห้องอบรม"
+                        width="1200"
+                        height="675"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/power-bi-2.jpg?v=1790241373"
+                        alt="พนักงานฝึกสร้าง Dashboard ตามตัวอย่างบนจอ"
+                        width="1200"
+                        height="675"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/power-bi-3.jpg?v=1790241373"
+                        alt="บรรยากาศการอบรม Power BI"
+                        width="1200"
+                        height="675"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                  </div>
+                
+            <button class="photo-nav photo-nav-prev" type="button" aria-label="ภาพก่อนหน้า">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="photo-nav photo-nav-next" type="button" aria-label="ภาพถัดไป">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>                          </div>
+
+                          <div class="photo-bars" role="group" aria-label="ภาพ วิทยากรอบรมภายในองค์กร">
+                                  <button type="button" class="is-active"
+                          aria-label="ภาพที่ 1 จาก 3"
+                          aria-current="true">
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 2 จาก 3"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 3 จาก 3"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                              </div>
+            
+            <h4 class="pf-item-title">วิทยากรอบรมภายในองค์กร</h4>
+            <p class="pf-item-desc">ผมได้รับโอกาสเป็นวิทยากรอบรมพนักงานภายในบริษัท ถ่ายทอดความรู้ด้าน Power BI และการใช้งานเครื่องมือดิจิทัล เพื่อให้ผู้เข้าร่วมสามารถนำความรู้ไปประยุกต์ใช้ในการวิเคราะห์ข้อมูลและเพิ่มประสิทธิภาพการทำงาน</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 3.8s">
+            <div class="photo-frame photo-frame-wide" data-photo-slider>
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/hr-tech-1.jpg?v=1790241813"
+                        alt="ผู้เข้าร่วมจำนวนมากในห้องสัมมนาหลักของงาน"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/hr-tech-2.jpg?v=1790241814"
+                        alt="บัตรผู้เข้าร่วมงาน HR Tech"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                        style="object-position: 50% 55%"                      >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/hr-tech-3.jpg?v=1790241814"
+                        alt="บูธจัดแสดงซอฟต์แวร์ด้านบุคคล"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/hr-tech-4.jpg?v=1790241814"
+                        alt="ป้ายรายชื่อบริษัทชั้นนำที่ร่วมงาน"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/hr-tech-5.jpg?v=1790241815"
+                        alt="ภาพกระจกในงาน HR Tech พร้อมบัตรผู้เข้าร่วม"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                        style="object-position: 50% 40%"                      >
+                    </figure>
+                                  </div>
+                
+            <button class="photo-nav photo-nav-prev" type="button" aria-label="ภาพก่อนหน้า">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="photo-nav photo-nav-next" type="button" aria-label="ภาพถัดไป">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>                          </div>
+
+                          <div class="photo-bars" role="group" aria-label="ภาพ ศึกษาดูงานซอฟต์แวร์">
+                                  <button type="button" class="is-active"
+                          aria-label="ภาพที่ 1 จาก 5"
+                          aria-current="true">
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 2 จาก 5"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 3 จาก 5"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 4 จาก 5"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 5 จาก 5"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                              </div>
+            
+            <h4 class="pf-item-title">ศึกษาดูงานซอฟต์แวร์</h4>
+            <p class="pf-item-desc">ผมได้รับโอกาสจากบริษัทให้เข้าร่วมโครงการ HR Tech ในย่านสยาม ปทุมวัน กรุงเทพฯ เพื่อศึกษาซอฟต์แวร์และเทคโนโลยีด้านการบริหารทรัพยากรบุคคล รวมถึงเรียนรู้แนวทางการนำเทคโนโลยีมาปรับปรุงกระบวนการทำงานของฝ่าย HR</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 4.2s">
+            <div class="photo-frame photo-frame-wide" data-photo-slider>
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/labour-training-1.jpg?v=1790241373"
+                        alt="หน้าอาคารหน่วยงานแรงงาน อำเภอเมืองชลบุรี"
+                        width="900"
+                        height="1200"
+                        loading="lazy"
+                        style="object-position: 50% 72%"                      >
+                    </figure>
+                                      <figure class="photo-slide" aria-hidden="true">
+                      <img
+                        src="../assets/images/activities/labour-training-2.jpg?v=1790241373"
+                        alt="บรรยากาศห้องอบรม"
+                        width="1200"
+                        height="675"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                  </div>
+                
+            <button class="photo-nav photo-nav-prev" type="button" aria-label="ภาพก่อนหน้า">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="photo-nav photo-nav-next" type="button" aria-label="ภาพถัดไป">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>                          </div>
+
+                          <div class="photo-bars" role="group" aria-label="ภาพ อบรมพัฒนาทักษะวิชาชีพ">
+                                  <button type="button" class="is-active"
+                          aria-label="ภาพที่ 1 จาก 2"
+                          aria-current="true">
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                                  <button type="button" class=""
+                          aria-label="ภาพที่ 2 จาก 2"
+                          >
+                    <span class="photo-bar-fill"></span>
+                  </button>
+                              </div>
+            
+            <h4 class="pf-item-title">อบรมพัฒนาทักษะวิชาชีพ</h4>
+            <p class="pf-item-desc">ผมเข้าร่วมการอบรมกับหน่วยงานด้านแรงงานจังหวัดชลบุรีตามที่บริษัทมอบหมาย เพื่อพัฒนาความรู้และทักษะเพิ่มเติม รวมถึงนำแนวคิดและประสบการณ์ที่ได้รับมาประยุกต์ใช้กับการทำงานภายในองค์กร</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 4.6s">
+            <div class="photo-frame photo-frame-wide">
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/community-1.jpg?v=1790243446"
+                        alt="ถนนย่านร้านค้าที่มีน้ำท่วมขัง"
+                        width="1200"
+                        height="675"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                  </div>
+                                          </div>
+
+            
+            <h4 class="pf-item-title">กิจกรรมบรรเทาสาธารณภัย</h4>
+            <p class="pf-item-desc">ผมมีโอกาสเข้าร่วมกิจกรรมอาสาช่วยเหลือผู้ประสบภัยน้ำท่วมในชุมชนรังสิต โดยร่วมกับเพื่อน ๆ ลงพื้นที่ให้ความช่วยเหลือและแก้ไขปัญหาเบื้องต้นให้กับชาวบ้าน เป็นประสบการณ์ที่ทำให้ผมได้เรียนรู้การทำงานร่วมกับผู้อื่นและเห็นความสำคัญของการช่วยเหลือสังคม</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 3.8s">
+            <div class="photo-frame photo-frame-wide">
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/taweewit-1.jpg?v=1790243158"
+                        alt="นักศึกษาอาสาแสดงละครให้นักเรียนโรงเรียนทวีวิทย์ที่นั่งชมอยู่บนพื้น"
+                        width="603"
+                        height="402"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                  </div>
+                                          </div>
+
+            
+            <h4 class="pf-item-title">กิจกรรมอาสาพัฒนาเยาวชน</h4>
+            <p class="pf-item-desc">ผมเข้าร่วมกิจกรรมอาสาสมัครที่โรงเรียนทวีวิทย์ โดยใช้กิจกรรมละครเวทีเป็นสื่อในการส่งเสริมทักษะการแก้ปัญหา ความคิดสร้างสรรค์ และความกล้าแสดงออกของเยาวชน พร้อมเปิดโอกาสให้นักเรียนได้เรียนรู้ผ่านการทำกิจกรรมร่วมกัน</p>
+          </li>
+                  <li class="pf-activity reveal" data-slider-card style="--slide-interval: 4.2s">
+            <div class="photo-frame photo-frame-wide">
+                              <div class="photo-track">
+                                      <figure class="photo-slide is-active">
+                      <img
+                        src="../assets/images/activities/environment-1.jpg?v=1790241815"
+                        alt="ลานคัดแยกขยะของมหาวิทยาลัยพร้อมกองขยะรอคัดแยกและรถกระบะ"
+                        width="639"
+                        height="371"
+                        loading="lazy"
+                                              >
+                    </figure>
+                                  </div>
+                                          </div>
+
+            
+            <h4 class="pf-item-title">โครงการอนุรักษ์สิ่งแวดล้อม</h4>
+            <p class="pf-item-desc">ผมเข้าร่วมโครงการคัดแยกและจัดการขยะของมหาวิทยาลัยธรรมศาสตร์ ภายใต้แนวคิด Green University เพื่อส่งเสริมการจัดการขยะอย่างเหมาะสมและสร้างความตระหนักด้านสิ่งแวดล้อม รวมถึงการมีส่วนร่วมในการพัฒนามหาวิทยาลัยอย่างยั่งยืน</p>
+          </li>
+              </ul>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+
+  <div class="footer-bottom page-bottom-bar">
+    <span>© 2026 Pumiput Chaichat</span>
+    <a
+      class="footer-top-link"
+      href="#main"
+      title="กลับขึ้นด้านบน"
+      aria-label="กลับขึ้นด้านบน"
+    >
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="m18 15-6-6-6 6"></path>
+      </svg>
+    </a>
+  </div>
+
+  <script src="../assets/js/main.js?v=1790325099" defer></script>
+  <script src="../assets/js/animations.js?v=1790307183" defer></script>
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a09">
+  <title>บันทึกการเดินทาง | Pumiput Chaichat</title>
+  <meta name="description" content="บันทึกภาพการเดินทางและเว็บไซต์ส่วนตัวของภูมิพัฒน์ ไชยชาติ">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&family=Italiana&family=Jost:wght@400;500;600&family=La+Belle+Aurore&family=Mali:wght@300&family=Montserrat:wght@700;800&family=Noto+Serif+Thai:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="../assets/favicon.svg?v=1781936404" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=1790325545">
+</head>
+<body class="page-home">
+  <a href="#main" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <div class="page-loader" aria-hidden="true">
+    <span>Pumiput Chaichat</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <button class="menu-button" id="menuButton" type="button"
+            aria-label="เปิดเมนู"
+            data-open-label="เปิดเมนู"
+            data-close-label="ปิดเมนู"
+            aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="เมนูหลัก">
+      <div class="nav-item nav-home">
+        <a href="#home" aria-haspopup="true" aria-current="page">Home</a>
+        <div class="nav-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Home">
+          <a href="#home"><span>01</span>หน้าแรก</a>
+          <a href="#journal"><span>02</span>บทนำ</a>
+          <a href="#moments"><span>03</span>บันทึกการเดินทาง</a>
+          <a href="#contact"><span>04</span>ข้อมูลติดต่อ</a>
+        </div>
+      </div>
+      <div class="nav-item nav-about">
+        <a href="../th/about.html#about" aria-haspopup="true">About Me</a>
+        <div class="nav-submenu" aria-label="ส่วนต่าง ๆ ของหน้า About">
+                      <a href="../th/about.html#about"><span>01</span>แนะนำตัว</a>
+                      <a href="../th/about.html#hobbies"><span>02</span>งานอดิเรก</a>
+                      <a href="../th/about.html#path"><span>03</span>เส้นทางการเติบโต</a>
+                  </div>
+      </div>
+      <div class="nav-item nav-portfolio">
+        <a href="../th/projects.html#intro" aria-haspopup="true">Portfolio</a>
+        <div class="nav-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Portfolio">
+                      <a href="../th/projects.html#intro"><span>01</span>แนวทางการทำงาน</a>
+                      <a href="../th/projects.html#skills"><span>02</span>การศึกษาและทักษะ</a>
+                      <a href="../th/projects.html#experience"><span>03</span>ประสบการณ์และผลงาน</a>
+                  </div>
+      </div>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="language-link" href="../index.html"
+         aria-label="เปลี่ยนเป็นภาษาอังกฤษ">
+        EN      </a>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="เมนู">
+    <div class="mobile-menu-primary">
+      <div class="m-group">
+        <a class="m-group-trigger" href="#home" aria-haspopup="true" aria-expanded="false" aria-current="page">Home</a>
+        <div class="mobile-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Home">
+          <a href="#home"><span>01</span>หน้าแรก</a>
+          <a href="#journal"><span>02</span>บทนำ</a>
+          <a href="#moments"><span>03</span>บันทึกการเดินทาง</a>
+          <a href="#contact"><span>04</span>ข้อมูลติดต่อ</a>
+        </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="../th/about.html#about" aria-haspopup="true" aria-expanded="false">About Me</a>
+        <div class="mobile-submenu" aria-label="ส่วนต่าง ๆ ของหน้า About">
+                      <a href="../th/about.html#about"><span>01</span>แนะนำตัว</a>
+                      <a href="../th/about.html#hobbies"><span>02</span>งานอดิเรก</a>
+                      <a href="../th/about.html#path"><span>03</span>เส้นทางการเติบโต</a>
+                  </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="../th/projects.html#intro" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+        <div class="mobile-submenu" aria-label="ส่วนต่าง ๆ ของหน้า Portfolio">
+                      <a href="../th/projects.html#intro"><span>01</span>แนวทางการทำงาน</a>
+                      <a href="../th/projects.html#skills"><span>02</span>การศึกษาและทักษะ</a>
+                      <a href="../th/projects.html#experience"><span>03</span>ประสบการณ์และผลงาน</a>
+                  </div>
+      </div>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+<section class="journal-hero" id="home" aria-labelledby="home-title">
+  <img
+    class="journal-hero-image"
+    src="../assets/images/journal/pumiput-mountain-hero.png"
+    alt="ภูมิพัฒน์ยืนมองวิวภูเขาในแสงเช้า"
+    width="1983"
+    height="793"
+    fetchpriority="high"
+  >
+  <div class="journal-hero-shade" aria-hidden="true"></div>
+
+  <div class="journal-hero-content">
+    
+    <p class="journal-location entrance">เรื่องราวและบันทึกส่วนตัว</p>
+    <h1 id="home-title" class="rotating-headline entrance entrance-delay">
+      <span class="sr-only">A story of learning, creating, exploring, and growing</span>
+      <span class="rotating-headline-visual" aria-hidden="true">
+        <span class="rotating-headline-fixed">A Story Of</span>
+        <span
+          class="rotating-word-slot"
+          data-rotating-words="LEARNING,CREATING,EXPLORING,GROWING"
+        >
+          <span class="rotating-word-clip is-visible">
+            <span class="rotating-word">Learning</span>
+            <span class="rotating-word-cursor"></span>
+          </span>
+        </span>
+      </span>
+    </h1>
+    <p class="journal-hero-copy entrance entrance-delay-2">
+      ทุกประสบการณ์ในชีวิต ล้วนสอนเราเสมอ    </p>
+  </div>
+
+  <a class="scroll-cue entrance entrance-delay-3" href="#journal">
+    <span>Loading</span>
+    <span class="scroll-line" aria-hidden="true"></span>
+  </a>
+</section>
+
+<section class="about-story" id="journal" aria-labelledby="about-story-title">
+  <div class="about-story-layout">
+    <figure class="about-story-primary reveal">
+      <img
+        src="../assets/images/journal/pumiput-fuji-composite.png"
+        alt="ภูเขาไฟฟูจิ ประเทศญี่ปุ่น"
+        width="1025"
+        height="1534"
+        loading="lazy"
+      >
+    </figure>
+
+    <div class="about-story-content">
+      <h2 id="about-story-title" class="sr-only">The Journey of Becoming</h2>
+
+      <div class="about-story-copy">
+                <p class="reveal">ผมเป็น Software Engineer ที่ชอบเขียนโค้ดและพัฒนาระบบใหม่ ๆ โดยเฉพาะการได้เปลี่ยนไอเดียให้กลายเป็นโปรแกรมที่ใช้งานได้จริง แต่ละโปรเจกต์ที่ทำก็มีทั้งเรื่องง่าย เรื่องยาก และปัญหาที่ไม่เคยเจอมาก่อน ซึ่งทำให้ผมได้เรียนรู้อะไรใหม่ ๆ อยู่ตลอด</p>
+          <p class="reveal">แต่ถ้าว่างจากงาน ผมก็ชอบออกไปเที่ยว หาสถานที่ใหม่ ๆ ไปถ่ายรูป หรือบางวันก็แค่หาร้านกาแฟนั่งชิล ๆ นอกจากนี้ผมยังชอบออกกำลังกาย เพราะนอกจากจะได้ดูแลตัวเองแล้ว ยังเป็นอีกหนึ่งกิจกรรมที่ผมสนุกและอยากพัฒนาตัวเองให้ดีขึ้นเรื่อย ๆ</p>
+          <p class="reveal">ผมเลยอยากใช้พื้นที่ตรงนี้เก็บเรื่องราวต่าง ๆ ของตัวเองไว้ ทั้งโปรเจกต์ที่เคยทำ สถานที่ที่เคยไป และประสบการณ์เล็ก ๆ น้อย ๆ ระหว่างทาง เผื่อวันหนึ่งได้กลับมาเปิดดูว่า ที่ผ่านมาเราได้ทำอะไร ได้เจออะไร และเดินทางมาไกลแค่ไหนแล้ว</p>
+            </div>
+
+      <figure class="about-story-secondary reveal">
+        <img
+          src="../assets/images/journal/pumiput-sakura-landscape.png"
+          alt="ภูมิพัฒน์ยืนอยู่ใต้ต้นซากุระในประเทศญี่ปุ่น"
+          width="1536"
+          height="1024"
+          loading="lazy"
+        >
+        <blockquote class="about-story-quote">
+          <p lang="th">
+            ความมุ่งมั่นและความตั้งใจ จะพาเราเข้าใกล้ความฝัน          </p>
+        </blockquote>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="travel-journal" id="moments" aria-labelledby="travel-title">
+  <h2 id="travel-title" class="sr-only">บันทึกการเดินทาง</h2>
+
+  <div class="travel-stage reveal" id="travelStage" data-mode="auto">
+    <div class="travel-stage-media">
+      <div class="travel-stage-frame">
+        <img class="travel-stage-image" id="stageImage"
+             src="../assets/images/journal/japan/อาซากุสะ.png"
+             alt="อาซากุสะ วัดเซนโซจิ"
+             width="1448" height="1086">
+        <span class="travel-stage-date" id="stageDate" aria-hidden="true">Apr 08</span>
+        <button class="travel-stage-nav travel-stage-prev" id="stagePrev" type="button" aria-label="ภาพก่อนหน้า">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+        </button>
+        <button class="travel-stage-nav travel-stage-next" id="stageNext" type="button" aria-label="ภาพถัดไป">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="travel-stage-thumbs" id="stageThumbs" aria-label="ภาพในสถานที่นี้" hidden></div>
+    </div>
+    <div class="travel-stage-info">
+      <p class="travel-stage-place">บันทึกการเดินทาง</p>
+      <h3 class="travel-stage-title">
+        <span id="stageTitle">วัดเซนโซจิ</span>&#8288;<span class="travel-stage-country" id="stagePlace">ญี่ปุ่น</span>
+      </h3>
+      <p class="travel-stage-desc" id="stageDesc">วันแรกที่มาถึงโตเกียว ผมก็แวะมาเที่ยววัดเซ็นโซจิเลยครับ ช่วงที่ไปเป็นตอนกลางคืนพอดี บรรยากาศสวยมาก โดยเฉพาะโคมไฟสีแดงขนาดใหญ่กับแสงไฟที่ส่องตามตัววัด คนก็ไม่เยอะเท่าตอนกลางวัน ทำให้เดินเล่นและถ่ายรูปได้แบบสบาย ๆ ผมใช้เวลาเดินชมบรรยากาศรอบ ๆ อยู่พักใหญ่ เป็นคืนแรกในโตเกียวที่ประทับใจมากครับ</p>
+    </div>
+  </div>
+
+  <div class="travel-explore">
+  <div class="travel-tabs reveal" role="tablist" aria-label="ประเทศที่ไป">
+          <button class="travel-tab is-active" type="button" role="tab"
+              id="tab-japan" aria-selected="true"
+              aria-controls="panel-japan" data-country="japan">
+        ญี่ปุ่น      </button>
+          <button class="travel-tab" type="button" role="tab"
+              id="tab-thailand" aria-selected="false"
+              aria-controls="panel-thailand" data-country="thailand" tabindex="-1">
+        ไทย      </button>
+      </div>
+
+  <div class="travel-panels">
+                <article class="travel-panel is-active" id="panel-japan"
+               role="tabpanel" aria-labelledby="tab-japan" data-country="japan">
+        <div class="travel-grid-pages">
+          <div class="travel-grid-track">
+                          <div class="travel-grid-page is-active" data-page="0">
+                <div class="travel-grid">
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="asakusa"
+                       aria-label="วัดเซนโซจิ">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/japan/อาซากุสะ.png"
+                             alt="อาซากุสะ วัดเซนโซจิ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">08</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">วัดเซนโซจิ</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="ueno"
+                       aria-label="สวนอุเอโนะ">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/japan/สวนอุเอโนะ.png"
+                             alt="สวนอุเอโนะในฤดูใบไม้ผลิ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">09</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">สวนอุเอโนะ</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="akihabara"
+                       aria-label="อากิฮาบาระ">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/japan/อากิฮาบาระ.png"
+                             alt="ย่านอากิฮาบาระกลางวัน"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">10</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">อากิฮาบาระ</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="shibuya"
+                       aria-label="ชิบูย่า">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/japan/ชิบูย่า.png"
+                             alt="สี่แยกชิบูย่ายามค่ำคืน"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">11</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">ชิบูย่า</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="skytree"
+                       aria-label="โตเกียวสกายทรี">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/japan/โตเกียวสกาย.png"
+                             alt="โตเกียวสกายทรีในวันฟ้าครึ้ม"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">12</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">โตเกียวสกายทรี</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="fuji"
+                       aria-label="ภูเขาไฟฟูจิ">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/japan/ภูเขาไฟฟูจิ.png"
+                             alt="ภูเขาไฟฟูจิในวันฟ้าใส"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">13</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">ภูเขาไฟฟูจิ</h3>
+                    </a>
+                                  </div>
+              </div>
+                      </div>
+        </div>
+
+              </article>
+                <article class="travel-panel" id="panel-thailand"
+               role="tabpanel" aria-labelledby="tab-thailand" data-country="thailand" hidden>
+        <div class="travel-grid-pages">
+          <div class="travel-grid-track">
+                          <div class="travel-grid-page is-active" data-page="0">
+                <div class="travel-grid">
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="khaoyai"
+                       aria-label="เขาใหญ่">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/เขาใหญ่.jpg"
+                             alt="เขาใหญ่ นครราชสีมา"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Jan</span><span class="travel-card-day">18</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">เขาใหญ่</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="watarun"
+                       aria-label="วัดอรุณราชวราราม">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/วัดอรุณ.png"
+                             alt="วัดอรุณราชวราราม กรุงเทพฯ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">15</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">วัดอรุณราชวราราม</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="taihong"
+                       aria-label="ศาลเจ้าไต้ฮงกงหยกขาว">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/ศาลเจ้าไต้ฮงกงหยกขาว.png"
+                             alt="ศาลเจ้าไต้ฮงกงหยกขาว กรุงเทพฯ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">18</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">ศาลเจ้าไต้ฮงกงหยกขาว</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="talatnoi"
+                       aria-label="ตลาดน้อย">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/ตลาดน้อย.png"
+                             alt="ตลาดน้อย กรุงเทพฯ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">23</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">ตลาดน้อย</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="talatbangluang"
+                       aria-label="ตลาดบางหลวง">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/ตลาดบางหลวง.png"
+                             alt="ตลาดบางหลวง ธนบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">29</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">ตลาดบางหลวง</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="kohloi"
+                       aria-label="เกาะลอย ศรีราชา">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/เกาะลอย.png"
+                             alt="เกาะลอย ศรีราชา ชลบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">02</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">เกาะลอย ศรีราชา</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="fokuangshan"
+                       aria-label="วัดโฝวกวงซัน">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/วัดโฝวกวงซัน.png"
+                             alt="วัดโฝวกวงซัน ชลบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">06</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">วัดโฝวกวงซัน</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="phrapradaeng"
+                       aria-label="อำเภอพระประแดง">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/อำเภอพระประแดง.png"
+                             alt="พระประแดง สมุทรปราการ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">20</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">อำเภอพระประแดง</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="pattaya"
+                       aria-label="หาดพัทยา ชลบุรี">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/หาดพัทยา.png"
+                             alt="หาดพัทยา ชลบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">28</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">หาดพัทยา ชลบุรี</h3>
+                    </a>
+                                  </div>
+              </div>
+                          <div class="travel-grid-page" data-page="1" inert aria-hidden="true">
+                <div class="travel-grid">
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="kohkret"
+                       aria-label="เกาะเกร็ด">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/เกาะเกร็ด.png"
+                             alt="เกาะเกร็ด นนทบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">May</span><span class="travel-card-day">10</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">เกาะเกร็ด</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="khaochalak"
+                       aria-label="เขาฉลาก">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/เขาฉลาก.png"
+                             alt="เขาฉลาก ชลบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">May</span><span class="travel-card-day">22</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">เขาฉลาก</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="laemphochao"
+                       aria-label="แหลมปู่เจ้า">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/แหลมปู่เจ้า.png"
+                             alt="แหลมปู่เจ้า ชลบุรี"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">May</span><span class="travel-card-day">25</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">แหลมปู่เจ้า</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="sealife"
+                       aria-label="ซีไลฟ์ แบงคอก">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/ซีไลฟ์แบงคอก.jpg"
+                             alt="ซีไลฟ์ แบงคอก โอเชี่ยนเวิลด์"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Jun</span><span class="travel-card-day">12</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">ซีไลฟ์ แบงคอก</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="suanluangr9"
+                       aria-label="สวนหลวง ร.9">
+                      <figure class="travel-card-media">
+                        <img src="../assets/images/journal/thailand/สวนหลวงร9.png"
+                             alt="สวนหลวง ร.9 กรุงเทพฯ"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Jun</span><span class="travel-card-day">21</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">สวนหลวง ร.9</h3>
+                    </a>
+                                  </div>
+              </div>
+                      </div>
+        </div>
+
+                  <div class="travel-pager" data-country="thailand">
+            <button class="travel-pager-btn travel-pager-prev" type="button" disabled aria-label="หน้าก่อนหน้า">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <div class="travel-pager-dots">
+                              <button class="travel-pager-dot is-active" type="button" data-page="0"
+                        aria-label="หน้า 1"></button>
+                              <button class="travel-pager-dot" type="button" data-page="1"
+                        aria-label="หน้า 2"></button>
+                          </div>
+            <button class="travel-pager-btn travel-pager-next" type="button" aria-label="หน้าถัดไป">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+          </div>
+              </article>
+      </div>
+
+  </div>
+
+  <script type="application/json" id="travelStageData">{"japan":{"label":"ญี่ปุ่น","page":"journal-japan.php?lang=th","places":[{"id":"asakusa","date":["Apr","08"],"title":"วัดเซนโซจิ","desc":"วันแรกที่มาถึงโตเกียว ผมก็แวะมาเที่ยววัดเซ็นโซจิเลยครับ ช่วงที่ไปเป็นตอนกลางคืนพอดี บรรยากาศสวยมาก โดยเฉพาะโคมไฟสีแดงขนาดใหญ่กับแสงไฟที่ส่องตามตัววัด คนก็ไม่เยอะเท่าตอนกลางวัน ทำให้เดินเล่นและถ่ายรูปได้แบบสบาย ๆ ผมใช้เวลาเดินชมบรรยากาศรอบ ๆ อยู่พักใหญ่ เป็นคืนแรกในโตเกียวที่ประทับใจมากครับ","alt":"อาซากุสะ วัดเซนโซจิ","images":["../assets/images/journal/japan/อาซากุสะ.png"]},{"id":"ueno","date":["Apr","09"],"title":"สวนอุเอโนะ","desc":"ผมมีโอกาสได้มาเดินเล่นที่สวนอุเอโนะในช่วงฤดูใบไม้ผลิครับ ช่วงที่ไปมีดอกซากุระบานอยู่ตามทาง บรรยากาศดีมาก โดยเฉพาะบริเวณบ่อน้ำที่มีเรือหงส์ให้ปั่นเล่น ผมใช้เวลาเดินชมสวน ถ่ายรูป และนั่งพักผ่อนชมบรรยากาศไปเรื่อย ๆ เป็นอีกหนึ่งสถานที่ในโตเกียวที่ผมชอบมาก ใครที่อยากหาที่เดินเล่นสบาย ๆ ท่ามกลางธรรมชาติ ผมแนะนำให้ลองแวะมาครับ","alt":"สวนอุเอโนะในฤดูใบไม้ผลิ","images":["../assets/images/journal/japan/สวนอุเอโนะ.png"]},{"id":"akihabara","date":["Apr","10"],"title":"อากิฮาบาระ","desc":"วันนี้ผมมาเดินเล่นที่ย่านอากิฮาบาระครับ ที่นี่เต็มไปด้วยร้านเกม ร้านขายการ์ตูน อนิเมะ และอุปกรณ์อิเล็กทรอนิกส์ เดินไปทางไหนก็เจอแต่ตึกที่มีป้ายสีสันสดใสเต็มไปหมด ผมใช้เวลาเดินสำรวจร้านต่าง ๆ และถ่ายรูปบรรยากาศไปเรื่อย ๆ เป็นย่านที่คึกคักและมีอะไรให้ดูเยอะมาก โดยเฉพาะใครที่ชอบเกมหรืออนิเมะ ผมว่าน่าจะเดินเที่ยวกันได้ทั้งวันเลยครับ","alt":"ย่านอากิฮาบาระกลางวัน","images":["../assets/images/journal/japan/อากิฮาบาระ.png"]},{"id":"shibuya","date":["Apr","11"],"title":"ชิบูย่า","desc":"คืนนี้ผมได้มาเดินเล่นที่ย่านชิบูย่าครับ บรรยากาศตอนกลางคืนคึกคักมาก ผู้คนเดินกันเต็มถนน โดยเฉพาะบริเวณห้าแยกชิบูย่าที่มีคนเดินข้ามถนนพร้อมกันเยอะมาก หลังฝนตกพื้นถนนก็สะท้อนแสงไฟจากตึกและป้ายโฆษณารอบ ๆ สวยไปอีกแบบ ผมเดินเล่น ถ่ายรูป และเก็บบรรยากาศไปเรื่อย ๆ เป็นอีกหนึ่งคืนในโตเกียวที่ผมชอบมากครับ","alt":"สี่แยกชิบูย่ายามค่ำคืน","images":["../assets/images/journal/japan/ชิบูย่า.png"]},{"id":"skytree","date":["Apr","12"],"title":"โตเกียวสกายทรี","desc":"วันนี้ผมแวะมาชมโตเกียวสกายทรีครับ วันที่ไปท้องฟ้าค่อนข้างครึ้ม แต่พอได้มายืนมองหอคอยจากข้างล่างจริง ๆ ก็รู้สึกว่ามันสูงกว่าที่คิดไว้เยอะมาก ผมเดินเล่นแถว ๆ นั้นและถ่ายรูปเก็บบรรยากาศไว้ ถึงอากาศจะไม่ค่อยเป็นใจ แต่ก็ได้เห็นโตเกียวสกายทรีในอีกบรรยากาศหนึ่งที่สวยไปคนละแบบครับ","alt":"โตเกียวสกายทรีในวันฟ้าครึ้ม","images":["../assets/images/journal/japan/โตเกียวสกาย.png"]},{"id":"fuji","date":["Apr","13"],"title":"ภูเขาไฟฟูจิ","desc":"ช่วงท้าย ๆ ของทริป ผมมีโอกาสเดินทางออกจากโตเกียวเพื่อไปชมภูเขาไฟฟูจิครับ โชคดีมากที่วันที่ไปท้องฟ้าแจ่มใส ทำให้มองเห็นภูเขาไฟฟูจิได้อย่างชัดเจน แถมยังมีดอกซากุระบานอยู่ด้วย ผมใช้เวลาเดินเล่น ถ่ายรูป และชมวิวอยู่พักใหญ่ พอได้มาเห็นฟูจิด้วยตาตัวเองจริง ๆ ก็รู้สึกว่าสวยกว่าในรูปที่เคยเห็นมาก เป็นอีกหนึ่งสถานที่ที่ประทับใจที่สุดในทริปญี่ปุ่นครั้งนี้ครับ","alt":"ภูเขาไฟฟูจิในวันฟ้าใส","images":["../assets/images/journal/japan/ภูเขาไฟฟูจิ.png"]}]},"thailand":{"label":"ไทย","page":"journal-thailand.php?lang=th","places":[{"id":"khaoyai","date":["Jan","18"],"title":"เขาใหญ่","desc":"ผมเริ่มต้นปีด้วยการไปเที่ยวเขาใหญ่ครับ ช่วงที่ไปอากาศกำลังเย็นเลย มีหมอกบาง ๆ ปกคลุมอยู่ตามภูเขาและป่าไม้ บรรยากาศดีมากจนไม่อยากกลับเลยครับ ยิ่งตอนเช้าที่อากาศเย็นจนต้องใส่เสื้อกันหนาว ยิ่งรู้สึกเหมือนได้มาเที่ยวต่างจังหวัดไกล ๆ ทั้งที่จริงแล้วอยู่ไม่ไกลจากกรุงเทพฯ เลย","alt":"เขาใหญ่ นครราชสีมา","images":["../assets/images/journal/thailand/เขาใหญ่.jpg"]},{"id":"watarun","date":["Mar","15"],"title":"วัดอรุณราชวราราม","desc":"วันนี้ผมแวะมาเที่ยววัดอรุณครับ พอได้มาเห็นองค์พระปรางค์ใกล้ ๆ จริง ๆ ก็รู้สึกว่าสวยกว่าที่เคยเห็นในรูปเยอะเลย โดยเฉพาะลวดลายและรายละเอียดเล็ก ๆ บนองค์พระปรางค์ที่ตกแต่งไว้อย่างสวยงาม ช่วงที่ไปแสงกำลังดีพอดี ผมเลยใช้เวลาเดินชมรอบ ๆ วัดและถ่ายรูปเก็บบรรยากาศไว้ เป็นอีกหนึ่งสถานที่ในกรุงเทพฯ ที่อยากแนะนำให้ลองมาเที่ยวกันครับ","alt":"วัดอรุณราชวราราม กรุงเทพฯ","images":["../assets/images/journal/thailand/วัดอรุณ.png"]},{"id":"taihong","date":["Mar","18"],"title":"ศาลเจ้าไต้ฮงกงหยกขาว","desc":"วันนี้ผมมีโอกาสแวะมาที่ศาลเจ้าไต้ฮงกงหยกขาวครับ สิ่งแรกที่สะดุดตาเลยก็คือสถาปัตยกรรมจีนสีขาวที่ตัดกับประตูสีแดงและลวดลายสีทอง สวยและมีรายละเอียดเยอะมาก บรรยากาศภายในก็ค่อนข้างเงียบสงบ ผมเลยใช้เวลาเดินชมรอบ ๆ และถ่ายรูปตามมุมต่าง ๆ ใครที่ชอบสถาปัตยกรรมจีนหรืออยากหาสถานที่เดินเล่นถ่ายรูป ก็ลองแวะมาได้ครับ","alt":"ศาลเจ้าไต้ฮงกงหยกขาว กรุงเทพฯ","images":["../assets/images/journal/thailand/ศาลเจ้าไต้ฮงกงหยกขาว.png"]},{"id":"talatnoi","date":["Mar","23"],"title":"ตลาดน้อย","desc":"วันนี้ผมมาเดินเล่นที่ตลาดน้อยครับ เป็นย่านเก่าของกรุงเทพฯ ที่มีอะไรให้ดูเยอะกว่าที่คิดมาก เดินเข้าไปตามตรอกเล็ก ๆ ก็จะเจอทั้งตึกเก่า ร้านค้า และภาพสตรีทอาร์ตตามกำแพง ผมชอบตรงที่แต่ละซอยมีมุมให้ถ่ายรูปไม่เหมือนกัน เดินไปเรื่อย ๆ ก็เจออะไรใหม่ ๆ ตลอด ใครที่ชอบถ่ายรูปหรืออยากลองมาเดินเที่ยวกรุงเทพฯ ในบรรยากาศที่แตกต่างจากห้างสรรพสินค้า ผมว่าย่านนี้น่าสนใจมากครับ","alt":"ตลาดน้อย กรุงเทพฯ","images":["../assets/images/journal/thailand/ตลาดน้อย.png"]},{"id":"talatbangluang","date":["Mar","29"],"title":"ตลาดบางหลวง","desc":"วันนี้ผมลองเปลี่ยนบรรยากาศมานั่งเรือเที่ยวคลองบางหลวงครับ ระหว่างทางได้เห็นบ้านไม้เก่า ๆ ริมคลองและวิถีชีวิตของคนในชุมชนที่ยังคงมีเสน่ห์แบบดั้งเดิม พอมาถึงก็ได้เดินเล่นชมตลาดและบรรยากาศริมน้ำ ที่นี่ค่อนข้างเงียบสงบ ไม่ได้วุ่นวายเหมือนตลาดท่องเที่ยวหลาย ๆ แห่ง เป็นทริปสบาย ๆ ที่ไม่ต้องรีบร้อนอะไรเลยครับ","alt":"ตลาดบางหลวง ธนบุรี","images":["../assets/images/journal/thailand/ตลาดบางหลวง.png"]},{"id":"kohloi","date":["Apr","02"],"title":"เกาะลอย ศรีราชา","desc":"ช่วงเย็นวันนี้ผมแวะมาที่เกาะลอย ศรีราชาครับ บรรยากาศริมทะเลช่วงเย็นดีมาก มีทั้งเรือที่จอดอยู่และแสงอาทิตย์ที่กำลังตกกระทบผิวน้ำ ผมเดินเล่นตามทางริมทะเลแล้วก็หามุมนั่งชมวิวสักพัก ลมทะเลพัดมาเรื่อย ๆ รู้สึกสบายมาก เป็นสถานที่ที่เหมาะกับการแวะมาพักผ่อนช่วงเย็นโดยไม่ต้องวางแผนอะไรมากเลยครับ","alt":"เกาะลอย ศรีราชา ชลบุรี","images":["../assets/images/journal/thailand/เกาะลอย.png"]},{"id":"fokuangshan","date":["Apr","06"],"title":"วัดโฝวกวงซัน","desc":"ระหว่างมาเที่ยวศรีราชา ผมมีโอกาสแวะมาที่วัดโฝวกวงซันครับ เป็นวัดจีนที่มีสถาปัตยกรรมสวยและยิ่งใหญ่มาก โดยเฉพาะองค์พระสีทองที่มองเห็นได้อย่างเด่นชัด พอเดินเข้าไปข้างในก็รู้สึกว่าบรรยากาศค่อนข้างสงบ ลานวัดกว้างและมีรายละเอียดของงานแกะสลักให้เดินชมเยอะเลย ผมใช้เวลาเดินดูรอบ ๆ และถ่ายรูปเก็บไว้หลายมุม เป็นอีกหนึ่งสถานที่ที่ประทับใจในทริปนี้ครับ","alt":"วัดโฝวกวงซัน ชลบุรี","images":["../assets/images/journal/thailand/วัดโฝวกวงซัน.png"]},{"id":"phrapradaeng","date":["Apr","20"],"title":"อำเภอพระประแดง","desc":"วันนี้ผมเปลี่ยนบรรยากาศจากการขับรถเที่ยวมาลองปั่นจักรยานที่พระประแดงครับ ผมเอาจักรยานขึ้นเรือข้ามฟากจากฝั่งกรุงเทพฯ พอข้ามแม่น้ำมาแล้วบรรยากาศเปลี่ยนไปเลย จากตึกสูงและถนนที่เต็มไปด้วยรถ กลายเป็นถนนเล็ก ๆ ที่มีต้นไม้ร่มรื่นตลอดทาง ผมปั่นจักรยานชมบรรยากาศไปเรื่อย ๆ แบบไม่ต้องรีบร้อน เป็นอีกหนึ่งทริปใกล้กรุงเทพฯ ที่สนุกและได้พักผ่อนไปในตัวครับ","alt":"พระประแดง สมุทรปราการ","images":["../assets/images/journal/thailand/อำเภอพระประแดง.png"]},{"id":"pattaya","date":["Apr","28"],"title":"หาดพัทยา ชลบุรี","desc":"วันนี้ผมมาเที่ยวพัทยาครับ แต่รอบนี้ได้มีโอกาสมองวิวชายหาดจากมุมสูงแทน พอมองลงไปก็เห็นทั้งทะเลสีฟ้า หาดทราย และร่มชายหาดที่เรียงกันเป็นแถว สวยกว่าที่คิดไว้เยอะเลยครับ ยิ่งวันที่ไปแดดดีและท้องฟ้าแจ่มใสด้วย ทำให้บรรยากาศดูสดใสมาก ปกติพอพูดถึงพัทยาก็จะนึกถึงความคึกคัก แต่พอได้มองจากมุมนี้ก็รู้สึกว่าเป็นเมืองที่มีวิวสวยและน่าพักผ่อนเหมือนกันครับ","alt":"หาดพัทยา ชลบุรี","images":["../assets/images/journal/thailand/หาดพัทยา.png"]},{"id":"kohkret","date":["May","10"],"title":"เกาะเกร็ด","desc":"วันนี้ผมแวะมาเที่ยวเกาะเกร็ดครับ แต่แทนที่จะรีบเดินเที่ยว ผมเลือกมานั่งกินข้าวริมแม่น้ำก่อน บรรยากาศดีมากครับ ระหว่างกินข้าวก็นั่งดูเรือที่แล่นผ่านไปมาและมองวิถีชีวิตของผู้คนสองฝั่งแม่น้ำไปด้วย เป็นช่วงเวลาที่รู้สึกสบาย ๆ ไม่ต้องรีบร้อนอะไร บางทีการได้ออกมาเที่ยวใกล้ ๆ กรุงเทพฯ แล้วนั่งกินข้าวชมวิวแบบนี้ก็เป็นการพักผ่อนที่ดีเหมือนกันครับ","alt":"เกาะเกร็ด นนทบุรี","images":["../assets/images/journal/thailand/เกาะเกร็ด.png"]},{"id":"khaochalak","date":["May","22"],"title":"เขาฉลาก","desc":"วันนี้ผมขึ้นมาชมวิวที่เขาฉลากช่วงเย็นครับ จากข้างบนสามารถมองเห็นทั้งตัวเมืองและทะเลได้กว้างมาก ช่วงที่ไปเป็นเวลาพลบค่ำพอดี ได้เห็นแสงไฟจากตัวเมืองค่อย ๆ สว่างขึ้นพร้อมกับท้องฟ้าที่เริ่มเปลี่ยนสี ผมยืนชมวิวและถ่ายรูปอยู่พักใหญ่ โดยเฉพาะมุมที่มีธงชาติไทยอยู่ด้านหน้า เป็นภาพที่ผมชอบมากและอยากเก็บไว้เป็นความทรงจำของทริปนี้ครับ","alt":"เขาฉลาก ชลบุรี","images":["../assets/images/journal/thailand/เขาฉลาก.png"]},{"id":"laemphochao","date":["May","25"],"title":"แหลมปู่เจ้า","desc":"วันนี้ผมได้แวะมาชมวิวที่แหลมปู่เจ้าครับ พอขึ้นมาถึงจุดชมวิวก็เห็นทะเลกว้างสุดสายตา มีเกาะเล็ก ๆ และแนวเขื่อนทอดยาวอยู่ไกล ๆ วันที่ไปท้องฟ้าสวยมาก มีเมฆก้อนใหญ่ลอยอยู่เหนือทะเล ผมเลยใช้เวลายืนชมวิวและถ่ายรูปอยู่ตรงนี้สักพัก เป็นอีกหนึ่งจุดชมวิวที่ได้มองเห็นทะเลจากมุมสูงและรู้สึกว่าคุ้มค่ากับการแวะมามากครับ","alt":"แหลมปู่เจ้า ชลบุรี","images":["../assets/images/journal/thailand/แหลมปู่เจ้า.png"]},{"id":"sealife","date":["Jun","12"],"title":"ซีไลฟ์ แบงคอก","desc":"วันนี้ฝนตกแทบทั้งวันเลยครับ ผมก็เลยเปลี่ยนแผนมาเดินเที่ยวซีไลฟ์ที่สยามพารากอนแทน ข้างในมีสัตว์ทะเลให้ดูเยอะมาก แต่ที่ผมชอบที่สุดน่าจะเป็นอุโมงค์กระจกใต้น้ำที่มีฝูงปลาและปลากระเบนว่ายผ่านอยู่เหนือหัว รู้สึกเหมือนได้เดินอยู่ใต้ทะเลจริง ๆ จากตอนแรกที่แค่หาที่เที่ยวหลบฝน กลายเป็นว่าเดินดูปลาเพลินกว่าที่คิดไว้เยอะเลยครับ","alt":"ซีไลฟ์ แบงคอก โอเชี่ยนเวิลด์","images":["../assets/images/journal/thailand/ซีไลฟ์แบงคอก.jpg"]},{"id":"suanluangr9","date":["Jun","21"],"title":"สวนหลวง ร.9","desc":"วันนี้ผมมาเดินเล่นที่สวนหลวง ร.9 ครับ ช่วงนี้เป็นต้นฤดูฝนพอดี ต้นไม้ในสวนเลยเขียวชอุ่มมาก แถมอากาศหลังฝนตกก็สดชื่นสุด ๆ ผมเดินเล่นรอบ ๆ ทะเลสาบ ชมวิวและถ่ายรูปไปเรื่อย ๆ สวนที่นี่กว้างมากครับ เดินได้เป็นชั่วโมงเลยโดยไม่รู้สึกเบื่อ ใครที่อยากหาที่เดินเล่น ออกกำลังกาย หรือพักผ่อนในวันหยุด ผมว่าที่นี่เหมาะมากครับ","alt":"สวนหลวง ร.9 กรุงเทพฯ","images":["../assets/images/journal/thailand/สวนหลวงร9.png"]}]}}</script>
+</section>
+
+  </main>
+
+  <footer class="journal-footer" id="contact">
+    <section class="contact-intro" aria-labelledby="contact-title">
+      <img
+        class="contact-intro-image"
+        src="../assets/images/journal/contact-bridge.jpg"
+        alt="สะพานภูมิพลในแสงพระอาทิตย์ตกเหนือแม่น้ำเจ้าพระยา"
+        width="1477"
+        height="1108"
+        loading="lazy"
+      >
+      <div class="contact-intro-shade" aria-hidden="true"></div>
+
+      <div class="contact-intro-copy">
+        <h2 id="contact-title" class="reveal">
+          พูดคุยและสร้างโอกาสร่วมกัน        </h2>
+        <p class="contact-description reveal">
+          พื้นที่นี้เป็นที่ที่ผมใช้แบ่งปันเรื่องราวต่าง ๆ ทั้งชีวิตประจำวัน การเดินทาง ประสบการณ์ และโปรเจกต์ที่กำลังทำอยู่ หากใครอยากพูดคุย แลกเปลี่ยนไอเดีย หรือสนใจร่วมงานกัน สามารถติดต่อผมทางอีเมลได้เลยครับ ยินดีที่ได้รู้จักทุกคนครับ        </p>
+      </div>
+
+      <div class="contact-intro-action reveal">
+        <p>กรอกอีเมลของคุณเพื่อติดต่อ</p>
+        <form
+          class="contact-email-form"
+          id="contactEmailForm"
+          data-recipient="pumiputc3210@gmail.com"
+          data-subject="ติดต่อจากเว็บไซต์ Pumiput"
+          data-message="สวัสดี Pumiput อีเมลของฉันคือ"
+        >
+          <label class="sr-only" for="contactEmail">
+            อีเมลของคุณ          </label>
+          <input
+            id="contactEmail"
+            name="email"
+            type="email"
+            placeholder="อีเมลของคุณ"
+            autocomplete="email"
+            required
+          >
+          <button type="submit" title="เปิดอีเมลเพื่อติดต่อ" aria-label="เปิดอีเมลเพื่อติดต่อ">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m22 2-7 20-4-9-9-4Z"></path>
+              <path d="M22 2 11 13"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer-details">
+      <div class="footer-detail">
+        <span>ที่อยู่</span>
+        <strong>Bangkok, Thailand</strong>
+      </div>
+      <div class="footer-detail">
+        <span>โทรศัพท์</span>
+        <strong><a href="tel:0834554197">083-455-4197</a></strong>
+      </div>
+      <div class="footer-detail">
+        <span>อีเมล</span>
+        <strong><a href="mailto:pumiputc3210@gmail.com">pumiputc3210@gmail.com</a></strong>
+      </div>
+      <div class="footer-detail footer-social">
+        <span>ช่องทางติดต่อ</span>
+        <div class="social-icons">
+          <a class="social-icon social-letter social-linkedin" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">in</a>
+          <a class="social-icon" href="https://www.instagram.com/cgame._" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+          </a>
+          <a class="social-icon social-github" href="https://github.com/PumiputCG" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </a>
+          <button class="social-icon social-line" id="lineQrOpen" type="button" title="LINE" aria-label="เปิดคิวอาร์โค้ดไลน์">LINE</button>
+          <a class="social-icon" href="mailto:pumiputc3210@gmail.com" title="อีเมล" aria-label="ส่งอีเมล">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Pumiput Chaichat</span>
+      <a
+        class="footer-top-link"
+        href="#home"
+        title="กลับขึ้นด้านบน"
+        aria-label="กลับขึ้นด้านบน"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="m18 15-6-6-6 6"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <dialog class="line-qr-dialog" id="lineQrDialog" aria-labelledby="lineQrTitle">
+    <button class="line-qr-close" id="lineQrClose" type="button" aria-label="ปิด">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+    <div class="line-qr-body">
+      <img src="../assets/images/journal/line-qr.jpg" alt="คิวอาร์โค้ด LINE ของ Pumiput" width="684" height="651" loading="lazy">
+      <p id="lineQrTitle">สแกนเพื่อเพิ่ม LINE</p>
+    </div>
+  </dialog>
+
+
+  <script src="../assets/js/main.js?v=1790325099" defer></script>
+  <script src="../assets/js/animations.js?v=1790307183" defer></script>
+</body>
+</html>

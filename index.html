@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a09">
+  <title>Personal Journal | Pumiput Chaichat</title>
+  <meta name="description" content="A cinematic personal journal by Pumiput Chaichat.">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&family=Italiana&family=Jost:wght@400;500;600&family=La+Belle+Aurore&family=Mali:wght@300&family=Montserrat:wght@700;800&family=Noto+Serif+Thai:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/favicon.svg?v=1781936404" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css?v=1790325545">
+</head>
+<body class="page-home">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <div class="page-loader" aria-hidden="true">
+    <span>Pumiput Chaichat</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <button class="menu-button" id="menuButton" type="button"
+            aria-label="Open menu"
+            data-open-label="Open menu"
+            data-close-label="Close menu"
+            aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <div class="nav-item nav-home">
+        <a href="#home" aria-haspopup="true" aria-current="page">Home</a>
+        <div class="nav-submenu" aria-label="Home sections">
+          <a href="#home"><span>01</span>Home</a>
+          <a href="#journal"><span>02</span>Introduction</a>
+          <a href="#moments"><span>03</span>Travel Journal</a>
+          <a href="#contact"><span>04</span>Contact Information</a>
+        </div>
+      </div>
+      <div class="nav-item nav-about">
+        <a href="about.html#about" aria-haspopup="true">About Me</a>
+        <div class="nav-submenu" aria-label="About sections">
+                      <a href="about.html#about"><span>01</span>Introduction</a>
+                      <a href="about.html#hobbies"><span>02</span>Free Time</a>
+                      <a href="about.html#path"><span>03</span>The Path</a>
+                  </div>
+      </div>
+      <div class="nav-item nav-portfolio">
+        <a href="projects.html#intro" aria-haspopup="true">Portfolio</a>
+        <div class="nav-submenu" aria-label="Portfolio sections">
+                      <a href="projects.html#intro"><span>01</span>How I Work</a>
+                      <a href="projects.html#skills"><span>02</span>Education &amp; Skills</a>
+                      <a href="projects.html#experience"><span>03</span>Experience &amp; Work</a>
+                  </div>
+      </div>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="language-link" href="th/index.html"
+         aria-label="Switch to Thai">
+        TH      </a>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navigation menu">
+    <div class="mobile-menu-primary">
+      <div class="m-group">
+        <a class="m-group-trigger" href="#home" aria-haspopup="true" aria-expanded="false" aria-current="page">Home</a>
+        <div class="mobile-submenu" aria-label="Home sections">
+          <a href="#home"><span>01</span>Home</a>
+          <a href="#journal"><span>02</span>Introduction</a>
+          <a href="#moments"><span>03</span>Travel Journal</a>
+          <a href="#contact"><span>04</span>Contact Information</a>
+        </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="about.html#about" aria-haspopup="true" aria-expanded="false">About Me</a>
+        <div class="mobile-submenu" aria-label="About sections">
+                      <a href="about.html#about"><span>01</span>Introduction</a>
+                      <a href="about.html#hobbies"><span>02</span>Free Time</a>
+                      <a href="about.html#path"><span>03</span>The Path</a>
+                  </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="projects.html#intro" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+        <div class="mobile-submenu" aria-label="Portfolio sections">
+                      <a href="projects.html#intro"><span>01</span>How I Work</a>
+                      <a href="projects.html#skills"><span>02</span>Education &amp; Skills</a>
+                      <a href="projects.html#experience"><span>03</span>Experience &amp; Work</a>
+                  </div>
+      </div>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+<section class="journal-hero" id="home" aria-labelledby="home-title">
+  <img
+    class="journal-hero-image"
+    src="assets/images/journal/pumiput-mountain-hero.png"
+    alt="Pumiput overlooking layered mountains in the morning light"
+    width="1983"
+    height="793"
+    fetchpriority="high"
+  >
+  <div class="journal-hero-shade" aria-hidden="true"></div>
+
+  <div class="journal-hero-content">
+    
+    <p class="journal-location entrance">Stories & Personal Journal</p>
+    <h1 id="home-title" class="rotating-headline entrance entrance-delay">
+      <span class="sr-only">A story of learning, creating, exploring, and growing</span>
+      <span class="rotating-headline-visual" aria-hidden="true">
+        <span class="rotating-headline-fixed">A Story Of</span>
+        <span
+          class="rotating-word-slot"
+          data-rotating-words="LEARNING,CREATING,EXPLORING,GROWING"
+        >
+          <span class="rotating-word-clip is-visible">
+            <span class="rotating-word">Learning</span>
+            <span class="rotating-word-cursor"></span>
+          </span>
+        </span>
+      </span>
+    </h1>
+    <p class="journal-hero-copy entrance entrance-delay-2">
+      Every experience in life teaches us something.    </p>
+  </div>
+
+  <a class="scroll-cue entrance entrance-delay-3" href="#journal">
+    <span>Loading</span>
+    <span class="scroll-line" aria-hidden="true"></span>
+  </a>
+</section>
+
+<section class="about-story" id="journal" aria-labelledby="about-story-title">
+  <div class="about-story-layout">
+    <figure class="about-story-primary reveal">
+      <img
+        src="assets/images/journal/pumiput-fuji-composite.png"
+        alt="Fuji in Japan"
+        width="1025"
+        height="1534"
+        loading="lazy"
+      >
+    </figure>
+
+    <div class="about-story-content">
+      <h2 id="about-story-title" class="sr-only">The Journey of Becoming</h2>
+
+      <div class="about-story-copy">
+                <p class="reveal">I'm a Software Engineer who loves writing code and building new systems, especially turning ideas into software people can actually use. Every project brings a mix of easy wins, hard parts, and problems I've never faced before, so I'm always learning something new.</p>
+          <p class="reveal">When I'm not working, I like to travel, find new places to photograph, or on some days just settle into a café and take it easy. I also enjoy working out. It's a way to look after myself, and something I have fun with and want to keep getting better at.</p>
+          <p class="reveal">That's why I wanted a space to keep my own stories: the projects I've built, the places I've been, and the small experiences along the way. One day I can look back and see what I've done, what I've come across, and how far I've come.</p>
+            </div>
+
+      <figure class="about-story-secondary reveal">
+        <img
+          src="assets/images/journal/pumiput-sakura-landscape.png"
+          alt="Pumiput standing beneath cherry blossom trees in Japan"
+          width="1536"
+          height="1024"
+          loading="lazy"
+        >
+        <blockquote class="about-story-quote">
+          <p lang="en">
+            Determination and dedication bring us closer to our dreams.          </p>
+        </blockquote>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="travel-journal" id="moments" aria-labelledby="travel-title">
+  <h2 id="travel-title" class="sr-only">Travel Journal</h2>
+
+  <div class="travel-stage reveal" id="travelStage" data-mode="auto">
+    <div class="travel-stage-media">
+      <div class="travel-stage-frame">
+        <img class="travel-stage-image" id="stageImage"
+             src="assets/images/journal/japan/อาซากุสะ.png"
+             alt="Senso-ji Temple, Asakusa"
+             width="1448" height="1086">
+        <span class="travel-stage-date" id="stageDate" aria-hidden="true">Apr 08</span>
+        <button class="travel-stage-nav travel-stage-prev" id="stagePrev" type="button" aria-label="Previous photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+        </button>
+        <button class="travel-stage-nav travel-stage-next" id="stageNext" type="button" aria-label="Next photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="travel-stage-thumbs" id="stageThumbs" aria-label="Photos at this place" hidden></div>
+    </div>
+    <div class="travel-stage-info">
+      <p class="travel-stage-place">Travel Journal</p>
+      <h3 class="travel-stage-title">
+        <span id="stageTitle">Senso-ji Temple</span>&#8288;<span class="travel-stage-country" id="stagePlace">Japan</span>
+      </h3>
+      <p class="travel-stage-desc" id="stageDesc">On my first day in Tokyo, I visited Sensoji Temple at night. The temple looked amazing with its giant red lantern and beautiful lights illuminating the buildings. It wasn&#039;t as crowded as during the day, so I could take my time walking around and taking photos. It was a really nice way to spend my first night in Tokyo.</p>
+    </div>
+  </div>
+
+  <div class="travel-explore">
+  <div class="travel-tabs reveal" role="tablist" aria-label="Countries visited">
+          <button class="travel-tab is-active" type="button" role="tab"
+              id="tab-japan" aria-selected="true"
+              aria-controls="panel-japan" data-country="japan">
+        Japan      </button>
+          <button class="travel-tab" type="button" role="tab"
+              id="tab-thailand" aria-selected="false"
+              aria-controls="panel-thailand" data-country="thailand" tabindex="-1">
+        Thailand      </button>
+      </div>
+
+  <div class="travel-panels">
+                <article class="travel-panel is-active" id="panel-japan"
+               role="tabpanel" aria-labelledby="tab-japan" data-country="japan">
+        <div class="travel-grid-pages">
+          <div class="travel-grid-track">
+                          <div class="travel-grid-page is-active" data-page="0">
+                <div class="travel-grid">
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="asakusa"
+                       aria-label="Senso-ji Temple">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/japan/อาซากุสะ.png"
+                             alt="Senso-ji Temple, Asakusa"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">08</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Senso-ji Temple</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="ueno"
+                       aria-label="Ueno Park">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/japan/สวนอุเอโนะ.png"
+                             alt="Ueno Park in spring"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">09</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Ueno Park</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="akihabara"
+                       aria-label="Akihabara">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/japan/อากิฮาบาระ.png"
+                             alt="Akihabara district by day"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">10</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Akihabara</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="shibuya"
+                       aria-label="Shibuya">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/japan/ชิบูย่า.png"
+                             alt="Shibuya Crossing at night"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">11</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Shibuya</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="skytree"
+                       aria-label="Tokyo Skytree">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/japan/โตเกียวสกาย.png"
+                             alt="Tokyo Skytree on a cloudy day"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">12</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Tokyo Skytree</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="japan" data-place="fuji"
+                       aria-label="Mount Fuji">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/japan/ภูเขาไฟฟูจิ.png"
+                             alt="Mount Fuji on a clear day"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">13</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Mount Fuji</h3>
+                    </a>
+                                  </div>
+              </div>
+                      </div>
+        </div>
+
+              </article>
+                <article class="travel-panel" id="panel-thailand"
+               role="tabpanel" aria-labelledby="tab-thailand" data-country="thailand" hidden>
+        <div class="travel-grid-pages">
+          <div class="travel-grid-track">
+                          <div class="travel-grid-page is-active" data-page="0">
+                <div class="travel-grid">
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="khaoyai"
+                       aria-label="Khao Yai">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/เขาใหญ่.jpg"
+                             alt="Khao Yai National Park"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Jan</span><span class="travel-card-day">18</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Khao Yai</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="watarun"
+                       aria-label="Wat Arun">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/วัดอรุณ.png"
+                             alt="Wat Arun, Bangkok"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">15</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Wat Arun</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="taihong"
+                       aria-label="Tai Hong Kong White Jade Shrine">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/ศาลเจ้าไต้ฮงกงหยกขาว.png"
+                             alt="Tai Hong Kong White Jade Shrine, Bangkok"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">18</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Tai Hong Kong White Jade Shrine</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="talatnoi"
+                       aria-label="Talat Noi">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/ตลาดน้อย.png"
+                             alt="Talat Noi, Bangkok"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">23</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Talat Noi</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="talatbangluang"
+                       aria-label="Talat Bang Luang">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/ตลาดบางหลวง.png"
+                             alt="Talat Bang Luang, Thonburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Mar</span><span class="travel-card-day">29</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Talat Bang Luang</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="kohloi"
+                       aria-label="Koh Loi">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/เกาะลอย.png"
+                             alt="Koh Loi, Si Racha, Chonburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">02</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Koh Loi</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="fokuangshan"
+                       aria-label="Wat Fo Guang Shan">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/วัดโฝวกวงซัน.png"
+                             alt="Wat Fo Guang Shan, Chonburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">06</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Wat Fo Guang Shan</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="phrapradaeng"
+                       aria-label="Phra Pradaeng">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/อำเภอพระประแดง.png"
+                             alt="Phra Pradaeng, Samut Prakan"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">20</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Phra Pradaeng</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="pattaya"
+                       aria-label="Pattaya Beach">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/หาดพัทยา.png"
+                             alt="Pattaya Beach, Chonburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Apr</span><span class="travel-card-day">28</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Pattaya Beach</h3>
+                    </a>
+                                  </div>
+              </div>
+                          <div class="travel-grid-page" data-page="1" inert aria-hidden="true">
+                <div class="travel-grid">
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="kohkret"
+                       aria-label="Koh Kret">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/เกาะเกร็ด.png"
+                             alt="Koh Kret, Nonthaburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">May</span><span class="travel-card-day">10</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Koh Kret</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="khaochalak"
+                       aria-label="Khao Chalak">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/เขาฉลาก.png"
+                             alt="Khao Chalak, Chonburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">May</span><span class="travel-card-day">22</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Khao Chalak</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="laemphochao"
+                       aria-label="Laem Pu Chao">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/แหลมปู่เจ้า.png"
+                             alt="Laem Pu Chao, Chonburi"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">May</span><span class="travel-card-day">25</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Laem Pu Chao</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="sealife"
+                       aria-label="Sea Life Bangkok Ocean World">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/ซีไลฟ์แบงคอก.jpg"
+                             alt="Sea Life Bangkok Ocean World"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Jun</span><span class="travel-card-day">12</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Sea Life Bangkok Ocean World</h3>
+                    </a>
+                                      <a class="travel-card" href="#moments" data-country="thailand" data-place="suanluangr9"
+                       aria-label="Suan Luang Rama IX">
+                      <figure class="travel-card-media">
+                        <img src="assets/images/journal/thailand/สวนหลวงร9.png"
+                             alt="Suan Luang Rama IX Park, Bangkok"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month">Jun</span><span class="travel-card-day">21</span></span>
+                      </figure>
+                      <h3 class="travel-card-title">Suan Luang Rama IX</h3>
+                    </a>
+                                  </div>
+              </div>
+                      </div>
+        </div>
+
+                  <div class="travel-pager" data-country="thailand">
+            <button class="travel-pager-btn travel-pager-prev" type="button" disabled aria-label="Previous page">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <div class="travel-pager-dots">
+                              <button class="travel-pager-dot is-active" type="button" data-page="0"
+                        aria-label="Page 1"></button>
+                              <button class="travel-pager-dot" type="button" data-page="1"
+                        aria-label="Page 2"></button>
+                          </div>
+            <button class="travel-pager-btn travel-pager-next" type="button" aria-label="Next page">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+          </div>
+              </article>
+      </div>
+
+  </div>
+
+  <script type="application/json" id="travelStageData">{"japan":{"label":"Japan","page":"journal-japan.php?lang=en","places":[{"id":"asakusa","date":["Apr","08"],"title":"Senso-ji Temple","desc":"On my first day in Tokyo, I visited Sensoji Temple at night. The temple looked amazing with its giant red lantern and beautiful lights illuminating the buildings. It wasn't as crowded as during the day, so I could take my time walking around and taking photos. It was a really nice way to spend my first night in Tokyo.","alt":"Senso-ji Temple, Asakusa","images":["assets/images/journal/japan/อาซากุสะ.png"]},{"id":"ueno","date":["Apr","09"],"title":"Ueno Park","desc":"I had the chance to visit Ueno Park during spring, and the cherry blossoms were beautiful. I especially liked the pond with its swan boats and the peaceful atmosphere around the park. I spent some time walking around, taking photos, and just enjoying the scenery. It's a great place to slow down and take a break from the busy streets of Tokyo.","alt":"Ueno Park in spring","images":["assets/images/journal/japan/สวนอุเอโนะ.png"]},{"id":"akihabara","date":["Apr","10"],"title":"Akihabara","desc":"Today, I explored Akihabara, one of the most exciting neighborhoods in Tokyo. The streets were packed with gaming stores, anime shops, electronics, and colorful billboards everywhere. I spent my time walking around, checking out different stores, and taking photos. If you're into gaming or anime, you could easily spend an entire day here without getting bored.","alt":"Akihabara district by day","images":["assets/images/journal/japan/อากิฮาบาระ.png"]},{"id":"shibuya","date":["Apr","11"],"title":"Shibuya","desc":"Tonight, I went for a walk around Shibuya, and the atmosphere was incredible. The streets were full of people, especially at the famous Shibuya Crossing, where hundreds of people crossed the road at the same time. It had just rained, so the neon lights and giant billboards reflected beautifully on the wet streets. I spent the evening walking around and taking photos. Definitely one of my favorite nights in Tokyo.","alt":"Shibuya Crossing at night","images":["assets/images/journal/japan/ชิบูย่า.png"]},{"id":"skytree","date":["Apr","12"],"title":"Tokyo Skytree","desc":"Today, I stopped by Tokyo Skytree. The weather was pretty cloudy, but seeing the tower up close was still amazing. Standing right beneath it made me realize just how tall it actually is. I spent some time walking around the area and taking photos. Even though the weather wasn't perfect, it was still a great experience to finally see one of Tokyo's most famous landmarks in person.","alt":"Tokyo Skytree on a cloudy day","images":["assets/images/journal/japan/โตเกียวสกาย.png"]},{"id":"fuji","date":["Apr","13"],"title":"Mount Fuji","desc":"Towards the end of my trip, I traveled outside Tokyo to see Mount Fuji. I was really lucky because the weather was perfect that day. The sky was clear, and I could see the mountain beautifully, with cherry blossoms blooming nearby. I spent quite a while walking around, enjoying the view, and taking photos. Seeing Mount Fuji in person was even more amazing than I expected. It was definitely one of the highlights of my trip to Japan.","alt":"Mount Fuji on a clear day","images":["assets/images/journal/japan/ภูเขาไฟฟูจิ.png"]}]},"thailand":{"label":"Thailand","page":"journal-thailand.php?lang=en","places":[{"id":"khaoyai","date":["Jan","18"],"title":"Khao Yai","desc":"I started the year with a trip to Khao Yai. The weather was really nice and cool, with a little mist covering the mountains and forest. I especially loved the chilly mornings when I actually needed a jacket. It felt like I was somewhere far away from the city, even though it's just a short trip from Bangkok.","alt":"Khao Yai National Park","images":["assets/images/journal/thailand/เขาใหญ่.jpg"]},{"id":"watarun","date":["Mar","15"],"title":"Wat Arun","desc":"Today, I stopped by Wat Arun. Seeing the temple up close was even more impressive than looking at pictures. The details and patterns on the main prang were beautiful, especially with the sunlight hitting them at just the right time. I spent some time walking around and taking photos. Definitely a place worth visiting if you're in Bangkok.","alt":"Wat Arun, Bangkok","images":["assets/images/journal/thailand/วัดอรุณ.png"]},{"id":"taihong","date":["Mar","18"],"title":"Tai Hong Kong White Jade Shrine","desc":"I stopped by the Tai Hong Kong White Jade Shrine today. The first thing that caught my attention was the beautiful white Chinese architecture, with its red doors and golden details. The place was surprisingly peaceful, so I took my time walking around and taking photos. If you enjoy Chinese architecture or photography, this is a lovely place to visit.","alt":"Tai Hong Kong White Jade Shrine, Bangkok","images":["assets/images/journal/thailand/ศาลเจ้าไต้ฮงกงหยกขาว.png"]},{"id":"talatnoi","date":["Mar","23"],"title":"Talat Noi","desc":"Today, I explored Talat Noi, one of Bangkok's old neighborhoods. There's so much to see here, from narrow alleys and old buildings to street art hidden around different corners. I really enjoyed wandering around without a particular plan, discovering new spots and taking photos along the way. If you enjoy photography or want to explore a different side of Bangkok, this neighborhood is worth checking out.","alt":"Talat Noi, Bangkok","images":["assets/images/journal/thailand/ตลาดน้อย.png"]},{"id":"talatbangluang","date":["Mar","29"],"title":"Talat Bang Luang","desc":"Today, I decided to take a boat trip to Khlong Bang Luang for a change of scenery. Along the way, I passed old wooden houses and got a glimpse of everyday life in the riverside community. Once I arrived, I spent some time walking around the market and enjoying the atmosphere. It wasn't too crowded, which made it a really relaxing little trip.","alt":"Talat Bang Luang, Thonburi","images":["assets/images/journal/thailand/ตลาดบางหลวง.png"]},{"id":"kohloi","date":["Apr","02"],"title":"Koh Loi","desc":"I stopped by Koh Loi in Si Racha this evening. The seaside atmosphere was really nice, with boats nearby and the afternoon sunlight reflecting off the water. I walked along the waterfront and found a spot to sit and enjoy the view for a while. The sea breeze made it a perfect place to relax after a long day.","alt":"Koh Loi, Si Racha, Chonburi","images":["assets/images/journal/thailand/เกาะลอย.png"]},{"id":"fokuangshan","date":["Apr","06"],"title":"Wat Fo Guang Shan","desc":"During my trip to Si Racha, I stopped by Wat Fo Guang Shan. The Chinese-style architecture was impressive, especially the large golden Buddha statue. The temple grounds were spacious and peaceful, with beautiful carvings and details throughout the area. I spent some time walking around and taking photos. It was one of the memorable stops on this trip.","alt":"Wat Fo Guang Shan, Chonburi","images":["assets/images/journal/thailand/วัดโฝวกวงซัน.png"]},{"id":"phrapradaeng","date":["Apr","20"],"title":"Phra Pradaeng","desc":"Today, I decided to do something different and went cycling in Phra Pradaeng. I took my bike on a ferry from Bangkok, and the atmosphere completely changed once I crossed the river. Instead of busy roads and tall buildings, I found quiet streets surrounded by trees. I spent my time cycling around and enjoying the scenery without rushing anywhere. Such a nice little escape from the city.","alt":"Phra Pradaeng, Samut Prakan","images":["assets/images/journal/thailand/อำเภอพระประแดง.png"]},{"id":"pattaya","date":["Apr","28"],"title":"Pattaya Beach","desc":"Today, I visited Pattaya and got to see the beach from a higher viewpoint. Looking down, I could see the blue sea, sandy beach, and rows of colorful beach umbrellas. The weather was perfect, with plenty of sunshine and clear skies. I usually think of Pattaya as a busy city, but seeing it from this angle made me appreciate how beautiful the coastline really is.","alt":"Pattaya Beach, Chonburi","images":["assets/images/journal/thailand/หาดพัทยา.png"]},{"id":"kohkret","date":["May","10"],"title":"Koh Kret","desc":"Today, I went to Koh Kret and decided to start my visit with a meal by the river. It was such a relaxing spot. I enjoyed my food while watching boats pass by and seeing everyday life along the riverbanks. Sometimes, you don't need to travel far or plan a big trip to have a good day. A nice meal with a beautiful view is more than enough.","alt":"Koh Kret, Nonthaburi","images":["assets/images/journal/thailand/เกาะเกร็ด.png"]},{"id":"khaochalak","date":["May","22"],"title":"Khao Chalak","desc":"This evening, I went up to Khao Chalak to enjoy the view of the city and the sea. I arrived around sunset, just as the sky started changing colors and the city lights slowly came on. I spent some time taking photos and enjoying the view, especially the spot with the Thai flag in the foreground. It turned out to be one of my favorite photos from this trip.","alt":"Khao Chalak, Chonburi","images":["assets/images/journal/thailand/เขาฉลาก.png"]},{"id":"laemphochao","date":["May","25"],"title":"Laem Pu Chao","desc":"Today, I stopped by Laem Pu Chao to enjoy the sea view. From the viewpoint, I could see the wide-open sea, small islands, and a long breakwater stretching into the distance. The sky looked amazing that day, with huge clouds floating above the water. I stayed for a while to take photos and enjoy the scenery. It was definitely worth the stop.","alt":"Laem Pu Chao, Chonburi","images":["assets/images/journal/thailand/แหลมปู่เจ้า.png"]},{"id":"sealife","date":["Jun","12"],"title":"Sea Life Bangkok Ocean World","desc":"It was raining almost all day, so I changed my plans and decided to visit Sea Life Bangkok Ocean World instead. There were so many marine animals to see, but my favorite part was definitely the underwater glass tunnel. Watching fish and rays swim right above my head was amazing. What started as a backup plan for a rainy day turned into a really enjoyable afternoon.","alt":"Sea Life Bangkok Ocean World","images":["assets/images/journal/thailand/ซีไลฟ์แบงคอก.jpg"]},{"id":"suanluangr9","date":["Jun","21"],"title":"Suan Luang Rama IX","desc":"Today, I went for a walk at Suan Luang Rama IX. It was the beginning of the rainy season, so everything looked really green and fresh. The air felt especially nice after the rain. I spent some time walking around the lake, enjoying the scenery, and taking photos. The park is huge, and you can easily spend hours exploring it. A great place for a relaxing walk or some exercise on a day off.","alt":"Suan Luang Rama IX Park, Bangkok","images":["assets/images/journal/thailand/สวนหลวงร9.png"]}]}}</script>
+</section>
+
+  </main>
+
+  <footer class="journal-footer" id="contact">
+    <section class="contact-intro" aria-labelledby="contact-title">
+      <img
+        class="contact-intro-image"
+        src="assets/images/journal/contact-bridge.jpg"
+        alt="Bhumibol Bridge at sunset above the Chao Phraya River"
+        width="1477"
+        height="1108"
+        loading="lazy"
+      >
+      <div class="contact-intro-shade" aria-hidden="true"></div>
+
+      <div class="contact-intro-copy">
+        <h2 id="contact-title" class="reveal">
+          Let’s Connect and Create Opportunities        </h2>
+        <p class="contact-description reveal">
+          This is where I share my stories: everyday life, travels, experiences, and the projects I'm working on. If you'd like to chat, swap ideas, or work together, feel free to reach me by email. It's great to meet you.        </p>
+      </div>
+
+      <div class="contact-intro-action reveal">
+        <p>Enter your email to get in touch.</p>
+        <form
+          class="contact-email-form"
+          id="contactEmailForm"
+          data-recipient="pumiputc3210@gmail.com"
+          data-subject="Contact from Pumiput website"
+          data-message="Hello Pumiput, my email is"
+        >
+          <label class="sr-only" for="contactEmail">
+            Your email address          </label>
+          <input
+            id="contactEmail"
+            name="email"
+            type="email"
+            placeholder="Your Email Address"
+            autocomplete="email"
+            required
+          >
+          <button type="submit" title="Open email to get in touch" aria-label="Open email to get in touch">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m22 2-7 20-4-9-9-4Z"></path>
+              <path d="M22 2 11 13"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer-details">
+      <div class="footer-detail">
+        <span>Address</span>
+        <strong>Bangkok, Thailand</strong>
+      </div>
+      <div class="footer-detail">
+        <span>Phone</span>
+        <strong><a href="tel:0834554197">083-455-4197</a></strong>
+      </div>
+      <div class="footer-detail">
+        <span>Email</span>
+        <strong><a href="mailto:pumiputc3210@gmail.com">pumiputc3210@gmail.com</a></strong>
+      </div>
+      <div class="footer-detail footer-social">
+        <span>Social</span>
+        <div class="social-icons">
+          <a class="social-icon social-letter social-linkedin" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">in</a>
+          <a class="social-icon" href="https://www.instagram.com/cgame._" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+          </a>
+          <a class="social-icon social-github" href="https://github.com/PumiputCG" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </a>
+          <button class="social-icon social-line" id="lineQrOpen" type="button" title="LINE" aria-label="Open LINE QR code">LINE</button>
+          <a class="social-icon" href="mailto:pumiputc3210@gmail.com" title="Email" aria-label="Send email">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Pumiput Chaichat</span>
+      <a
+        class="footer-top-link"
+        href="#home"
+        title="Back to top"
+        aria-label="Back to top"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="m18 15-6-6-6 6"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <dialog class="line-qr-dialog" id="lineQrDialog" aria-labelledby="lineQrTitle">
+    <button class="line-qr-close" id="lineQrClose" type="button" aria-label="Close">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+    <div class="line-qr-body">
+      <img src="assets/images/journal/line-qr.jpg" alt="Pumiput LINE QR code" width="684" height="651" loading="lazy">
+      <p id="lineQrTitle">Scan to connect on LINE</p>
+    </div>
+  </dialog>
+
+
+  <script src="assets/js/main.js?v=1790325099" defer></script>
+  <script src="assets/js/animations.js?v=1790307183" defer></script>
+</body>
+</html>
