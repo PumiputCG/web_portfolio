@@ -1,16 +1,10 @@
 <?php
-/**
- * Language system — TH / EN
- * Stores the choice in a cookie + session and exposes small helpers
- * used across every page.
- */
 
 if (session_status() === PHP_SESSION_NONE) {
   session_start();
 }
 
-/* ---- Resolve current language --------------------------------------- */
-// Priority: ?lang= query  →  cookie  →  session  →  default 'en'
+/* Resolve current language */
 function resolveLang(): string {
   $allowed = ['th', 'en'];
 
@@ -37,7 +31,6 @@ function getCurrentLang(): string {
   return $lang;
 }
 
-/* ---- Build a URL that switches language, keeping the current page ---- */
 function getLangSwitchUrl(): string {
   $target = getCurrentLang() === 'th' ? 'en' : 'th';
   $path   = strtok($_SERVER['REQUEST_URI'], '?');
@@ -46,8 +39,7 @@ function getLangSwitchUrl(): string {
   return $path . '?' . http_build_query($params);
 }
 
-/* ---- Tiny translation helper ---------------------------------------- */
-// t(['th' => '...', 'en' => '...'])
+/* Translation helper */
 function t(array $pair): string {
   $lang = getCurrentLang();
   return $pair[$lang] ?? $pair['en'] ?? reset($pair);

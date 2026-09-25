@@ -21,11 +21,34 @@ $homeSectionUrl = static function (string $section) use ($active, $lang): string
     : 'index.php?lang=' . rawurlencode($lang) . '#' . $section;
 };
 
+$aboutSections = [
+  'about' => $isTH ? 'แนะนำตัว' : 'Introduction',
+  'hobbies' => $isTH ? 'งานอดิเรก' : 'Free Time',
+  'path' => $isTH ? 'เส้นทางการเติบโต' : 'The Path',
+];
+
+$aboutSectionUrl = static function (string $section) use ($active, $lang): string {
+  return $active === 'about'
+    ? '#' . $section
+    : 'about.php?lang=' . rawurlencode($lang) . '#' . $section;
+};
+
+$portfolioSections = [
+  'intro' => $isTH ? 'แนวทางการทำงาน' : 'How I Work',
+  'skills' => $isTH ? 'การศึกษาและทักษะ' : 'Education & Skills',
+  'experience' => $isTH ? 'ประสบการณ์และผลงาน' : 'Experience & Work',
+];
+
+$portfolioSectionUrl = static function (string $section) use ($active, $lang): string {
+  return $active === 'portfolio'
+    ? '#' . $section
+    : 'projects.php?lang=' . rawurlencode($lang) . '#' . $section;
+};
+
 $homeUrl = $homeSectionUrl('home');
-$aboutUrl = 'about.php?lang=' . rawurlencode($lang);
-$portfolioUrl = 'portfolio.php?lang=' . rawurlencode($lang);
-$workUrl = 'projects.php?lang=' . rawurlencode($lang);
-$contactUrl = 'contact.php?lang=' . rawurlencode($lang);
+$aboutUrl = $aboutSectionUrl('about');
+$portfolioUrl = $portfolioSectionUrl('intro');
+$contactUrl = $homeSectionUrl('contact');
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -77,10 +100,23 @@ $contactUrl = 'contact.php?lang=' . rawurlencode($lang);
           <a href="<?= htmlspecialchars($homeSectionUrl('contact')) ?>"><span>04</span><?= $homeSections['contact'] ?></a>
         </div>
       </div>
-      <a href="<?= htmlspecialchars($aboutUrl) ?>"<?= $active === 'about' ? ' aria-current="page"' : '' ?>>About Me</a>
-      <a href="<?= htmlspecialchars($portfolioUrl) ?>"<?= $active === 'portfolio' ? ' aria-current="page"' : '' ?>>Portfolio</a>
-      <a href="<?= htmlspecialchars($workUrl) ?>"<?= $active === 'work' ? ' aria-current="page"' : '' ?>>Work</a>
-      <a href="<?= htmlspecialchars($contactUrl) ?>"<?= $active === 'contact' ? ' aria-current="page"' : '' ?>>Contact</a>
+      <div class="nav-item nav-about">
+        <a href="<?= htmlspecialchars($aboutUrl) ?>" aria-haspopup="true"<?= $active === 'about' ? ' aria-current="page"' : '' ?>>About Me</a>
+        <div class="nav-submenu" aria-label="<?= $isTH ? 'ส่วนต่าง ๆ ของหน้า About' : 'About sections' ?>">
+          <?php $i = 0; foreach ($aboutSections as $key => $label): $i++; ?>
+            <a href="<?= htmlspecialchars($aboutSectionUrl($key)) ?>"><span><?= sprintf('%02d', $i) ?></span><?= $label ?></a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+      <div class="nav-item nav-portfolio">
+        <a href="<?= htmlspecialchars($portfolioUrl) ?>" aria-haspopup="true"<?= $active === 'portfolio' ? ' aria-current="page"' : '' ?>>Portfolio</a>
+        <div class="nav-submenu" aria-label="<?= $isTH ? 'ส่วนต่าง ๆ ของหน้า Portfolio' : 'Portfolio sections' ?>">
+          <?php $i = 0; foreach ($portfolioSections as $key => $label): $i++; ?>
+            <a href="<?= htmlspecialchars($portfolioSectionUrl($key)) ?>"><span><?= sprintf('%02d', $i) ?></span><?= htmlspecialchars($label) ?></a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+      <a href="<?= htmlspecialchars($contactUrl) ?>">Contact</a>
     </nav>
 
     <div class="header-actions">
@@ -93,19 +129,32 @@ $contactUrl = 'contact.php?lang=' . rawurlencode($lang);
 
   <nav class="mobile-menu" id="mobileMenu" aria-label="<?= $isTH ? 'เมนู' : 'Navigation menu' ?>">
     <div class="mobile-menu-primary">
-      <div class="m-home">
-        <a class="m-home-trigger" href="<?= htmlspecialchars($homeUrl) ?>" aria-haspopup="true" aria-expanded="false"<?= $active === 'home' ? ' aria-current="page"' : '' ?>>Home</a>
-        <div class="mobile-home-submenu" aria-label="<?= $isTH ? 'ส่วนต่าง ๆ ของหน้า Home' : 'Home sections' ?>">
+      <div class="m-group">
+        <a class="m-group-trigger" href="<?= htmlspecialchars($homeUrl) ?>" aria-haspopup="true" aria-expanded="false"<?= $active === 'home' ? ' aria-current="page"' : '' ?>>Home</a>
+        <div class="mobile-submenu" aria-label="<?= $isTH ? 'ส่วนต่าง ๆ ของหน้า Home' : 'Home sections' ?>">
           <a href="<?= htmlspecialchars($homeSectionUrl('home')) ?>"><span>01</span><?= $homeSections['home'] ?></a>
           <a href="<?= htmlspecialchars($homeSectionUrl('journal')) ?>"><span>02</span><?= $homeSections['journal'] ?></a>
           <a href="<?= htmlspecialchars($homeSectionUrl('moments')) ?>"><span>03</span><?= $homeSections['moments'] ?></a>
           <a href="<?= htmlspecialchars($homeSectionUrl('contact')) ?>"><span>04</span><?= $homeSections['contact'] ?></a>
         </div>
       </div>
-      <a href="<?= htmlspecialchars($aboutUrl) ?>"<?= $active === 'about' ? ' aria-current="page"' : '' ?>>About Me</a>
-      <a href="<?= htmlspecialchars($portfolioUrl) ?>"<?= $active === 'portfolio' ? ' aria-current="page"' : '' ?>>Portfolio</a>
-      <a href="<?= htmlspecialchars($workUrl) ?>"<?= $active === 'work' ? ' aria-current="page"' : '' ?>>Work</a>
-      <a href="<?= htmlspecialchars($contactUrl) ?>"<?= $active === 'contact' ? ' aria-current="page"' : '' ?>>Contact</a>
+      <div class="m-group">
+        <a class="m-group-trigger" href="<?= htmlspecialchars($aboutUrl) ?>" aria-haspopup="true" aria-expanded="false"<?= $active === 'about' ? ' aria-current="page"' : '' ?>>About Me</a>
+        <div class="mobile-submenu" aria-label="<?= $isTH ? 'ส่วนต่าง ๆ ของหน้า About' : 'About sections' ?>">
+          <?php $i = 0; foreach ($aboutSections as $key => $label): $i++; ?>
+            <a href="<?= htmlspecialchars($aboutSectionUrl($key)) ?>"><span><?= sprintf('%02d', $i) ?></span><?= $label ?></a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+      <div class="m-group">
+        <a class="m-group-trigger" href="<?= htmlspecialchars($portfolioUrl) ?>" aria-haspopup="true" aria-expanded="false"<?= $active === 'portfolio' ? ' aria-current="page"' : '' ?>>Portfolio</a>
+        <div class="mobile-submenu" aria-label="<?= $isTH ? 'ส่วนต่าง ๆ ของหน้า Portfolio' : 'Portfolio sections' ?>">
+          <?php $i = 0; foreach ($portfolioSections as $key => $label): $i++; ?>
+            <a href="<?= htmlspecialchars($portfolioSectionUrl($key)) ?>"><span><?= sprintf('%02d', $i) ?></span><?= htmlspecialchars($label) ?></a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+      <a href="<?= htmlspecialchars($contactUrl) ?>">Contact</a>
     </div>
   </nav>
 

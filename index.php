@@ -47,7 +47,7 @@ require_once __DIR__ . '/includes/header.php';
   </div>
 
   <a class="scroll-cue entrance entrance-delay-3" href="#journal">
-    <span><?= $isTH ? 'เปิดบันทึก' : 'Enter journal' ?></span>
+    <span>Loading</span>
     <span class="scroll-line" aria-hidden="true"></span>
   </a>
 </section>
@@ -64,32 +64,20 @@ require_once __DIR__ . '/includes/header.php';
         height="1534"
         loading="lazy"
       >
-      <blockquote class="about-story-quote">
-        <p lang="<?= $isTH ? 'th' : 'en' ?>">
-          <?= $isTH
-            ? 'ความมุ่งมั่นและความตั้งใจ จะพาเราเข้าใกล้ความฝัน'
-            : 'Determination and dedication bring us closer to our dreams.' ?>
-        </p>
-      </blockquote>
     </figure>
 
     <div class="about-story-content">
-      <p class="about-story-label reveal">
-        <?= $isTH ? 'เรื่องราวของการเติบโต' : 'A story of growth and discovery' ?>
-      </p>
-      <h2 id="about-story-title" class="reveal">
-        The Journey of Becoming
-      </h2>
+      <h2 id="about-story-title" class="sr-only">The Journey of Becoming</h2>
 
       <div class="about-story-copy">
       <?php if ($isTH): ?>
-          <p class="reveal">ในฐานะ Software Engineer ผมชอบการนำไอเดียที่ซับซ้อนมาพัฒนาให้กลายเป็นซอฟต์แวร์ที่เรียบง่าย ใช้งานได้จริง และช่วยแก้ปัญหาให้กับผู้คน การทำงานในแต่ละโปรเจกต์ทำให้ผมได้ลองผิดลองถูก แก้ปัญหา และเรียนรู้สิ่งใหม่อยู่เสมอ</p>
-          <p class="reveal">แต่ชีวิตของผมไม่ได้อยู่แค่หน้าจอคอมพิวเตอร์ ผมชอบออกเดินทาง ไปพบสถานที่ ผู้คน และมุมมองใหม่ ๆ รวมถึงการได้นั่งดื่มกาแฟเงียบ ๆ เพื่อหยุดพักและทบทวนเรื่องราวต่าง ๆ ส่วนการออกกำลังกายก็สอนให้ผมรู้ว่า ความก้าวหน้าที่ดีเกิดจากความอดทนและความสม่ำเสมอ</p>
-          <p class="reveal">ผมเชื่อว่าทุกสิ่งที่ได้พบเจอ และทุกประสบการณ์ระหว่างทาง ล้วนมีบางอย่างให้เราได้เรียนรู้ เรื่องราวเหล่านี้จึงเป็นทั้งความทรงจำ ประสบการณ์ และส่วนหนึ่งของตัวผมในวันนี้</p>
+          <p class="reveal">ผมเป็น Software Engineer ที่ชอบเขียนโค้ดและพัฒนาระบบใหม่ ๆ โดยเฉพาะการได้เปลี่ยนไอเดียให้กลายเป็นโปรแกรมที่ใช้งานได้จริง แต่ละโปรเจกต์ที่ทำก็มีทั้งเรื่องง่าย เรื่องยาก และปัญหาที่ไม่เคยเจอมาก่อน ซึ่งทำให้ผมได้เรียนรู้อะไรใหม่ ๆ อยู่ตลอด</p>
+          <p class="reveal">แต่ถ้าว่างจากงาน ผมก็ชอบออกไปเที่ยว หาสถานที่ใหม่ ๆ ไปถ่ายรูป หรือบางวันก็แค่หาร้านกาแฟนั่งชิล ๆ นอกจากนี้ผมยังชอบออกกำลังกาย เพราะนอกจากจะได้ดูแลตัวเองแล้ว ยังเป็นอีกหนึ่งกิจกรรมที่ผมสนุกและอยากพัฒนาตัวเองให้ดีขึ้นเรื่อย ๆ</p>
+          <p class="reveal">ผมเลยอยากใช้พื้นที่ตรงนี้เก็บเรื่องราวต่าง ๆ ของตัวเองไว้ ทั้งโปรเจกต์ที่เคยทำ สถานที่ที่เคยไป และประสบการณ์เล็ก ๆ น้อย ๆ ระหว่างทาง เผื่อวันหนึ่งได้กลับมาเปิดดูว่า ที่ผ่านมาเราได้ทำอะไร ได้เจออะไร และเดินทางมาไกลแค่ไหนแล้ว</p>
       <?php else: ?>
-          <p class="reveal">As a Software Engineer, I enjoy turning complex ideas into simple, practical software that helps solve real problems. Each project gives me the opportunity to experiment, overcome challenges, and learn something new.</p>
-          <p class="reveal">But my life is not limited to a computer screen. I enjoy traveling, discovering new places, meeting different people, and seeing life from new perspectives. A quiet cup of coffee gives me time to pause and reflect, while exercise reminds me that meaningful progress comes from patience and consistency.</p>
-          <p class="reveal">I believe that everything I encounter and every experience along the way has something to teach me. These stories have become memories, experiences, and a part of who I am today.</p>
+          <p class="reveal">I'm a Software Engineer who loves writing code and building new systems, especially turning ideas into software people can actually use. Every project brings a mix of easy wins, hard parts, and problems I've never faced before, so I'm always learning something new.</p>
+          <p class="reveal">When I'm not working, I like to travel, find new places to photograph, or on some days just settle into a café and take it easy. I also enjoy working out. It's a way to look after myself, and something I have fun with and want to keep getting better at.</p>
+          <p class="reveal">That's why I wanted a space to keep my own stories: the projects I've built, the places I've been, and the small experiences along the way. One day I can look back and see what I've done, what I've come across, and how far I've come.</p>
       <?php endif; ?>
       </div>
 
@@ -103,6 +91,13 @@ require_once __DIR__ . '/includes/header.php';
           height="1024"
           loading="lazy"
         >
+        <blockquote class="about-story-quote">
+          <p lang="<?= $isTH ? 'th' : 'en' ?>">
+            <?= $isTH
+              ? 'ความมุ่งมั่นและความตั้งใจ จะพาเราเข้าใกล้ความฝัน'
+              : 'Determination and dedication bring us closer to our dreams.' ?>
+          </p>
+        </blockquote>
       </figure>
     </div>
   </div>
@@ -114,7 +109,6 @@ require_once __DIR__ . '/includes/header.php';
   $countries  = getJournalCountries();
   $firstKey   = array_key_first($countries);
 
-  // Localized data for the stage (consumed by JS)
   $stageData = [];
   foreach ($countries as $key => $c) {
     $stageData[$key] = [
@@ -133,17 +127,12 @@ require_once __DIR__ . '/includes/header.php';
     ];
   }
 
-  // Server-side default (first place) so the stage shows without JS
   $d0    = $countries[$firstKey];
   $p0    = $d0['places'][0];
 ?>
 <section class="travel-journal" id="moments" aria-labelledby="travel-title">
-  <div class="travel-head">
-    <p class="section-label reveal"><?= $isTH ? 'บันทึกการเดินทาง' : 'Travel Journal' ?></p>
-    <h2 id="travel-title" class="reveal"><?= $isTH ? 'ที่ที่ฉันได้ไปเยือน' : "Places I've Wandered" ?></h2>
-  </div>
+  <h2 id="travel-title" class="sr-only"><?= $isTH ? 'บันทึกการเดินทาง' : 'Travel Journal' ?></h2>
 
-  <!-- Stage: rotates through trips by default; a card's "Read more" loads that place here -->
   <div class="travel-stage reveal" id="travelStage" data-mode="auto">
     <div class="travel-stage-media">
       <div class="travel-stage-frame">
@@ -162,8 +151,10 @@ require_once __DIR__ . '/includes/header.php';
       <div class="travel-stage-thumbs" id="stageThumbs" aria-label="<?= $isTH ? 'ภาพในสถานที่นี้' : 'Photos at this place' ?>" hidden></div>
     </div>
     <div class="travel-stage-info">
-      <p class="travel-stage-place" id="stagePlace"><?= htmlspecialchars($isTH ? $d0['label_th'] : $d0['label_en']) ?></p>
-      <h3 class="travel-stage-title" id="stageTitle"><?= htmlspecialchars($isTH ? $p0['title_th'] : $p0['title_en']) ?></h3>
+      <p class="travel-stage-place"><?= $isTH ? 'บันทึกการเดินทาง' : 'Travel Journal' ?></p>
+      <h3 class="travel-stage-title">
+        <span id="stageTitle"><?= htmlspecialchars($isTH ? $p0['title_th'] : $p0['title_en']) ?></span>&#8288;<span class="travel-stage-country" id="stagePlace"><?= htmlspecialchars($isTH ? $d0['label_th'] : $d0['label_en']) ?></span>
+      </h3>
       <p class="travel-stage-desc" id="stageDesc"><?= htmlspecialchars($isTH ? $p0['desc_th'] : $p0['desc_en']) ?></p>
     </div>
   </div>
@@ -181,22 +172,48 @@ require_once __DIR__ . '/includes/header.php';
 
   <div class="travel-panels">
     <?php foreach ($countries as $key => $c): $on = $key === $firstKey; ?>
+      <?php $placePages = array_chunk($c['places'], 9); ?>
       <article class="travel-panel<?= $on ? ' is-active' : '' ?>" id="panel-<?= $key ?>"
                role="tabpanel" aria-labelledby="tab-<?= $key ?>" data-country="<?= $key ?>"<?= $on ? '' : ' hidden' ?>>
-        <div class="travel-grid">
-          <?php foreach ($c['places'] as $p): ?>
-            <a class="travel-card" href="#moments" data-country="<?= $key ?>" data-place="<?= htmlspecialchars($p['id']) ?>"
-               aria-label="<?= htmlspecialchars($isTH ? $p['title_th'] : $p['title_en']) ?>">
-              <figure class="travel-card-media">
-                <img src="<?= htmlspecialchars($p['images'][0]) ?>"
-                     alt="<?= htmlspecialchars($isTH ? $p['alt_th'] : $p['alt_en']) ?>"
-                     width="800" height="600" loading="lazy">
-                <span class="travel-card-date"><span class="travel-card-month"><?= htmlspecialchars($p['date'][0]) ?></span><span class="travel-card-day"><?= htmlspecialchars($p['date'][1]) ?></span></span>
-              </figure>
-              <h3 class="travel-card-title"><?= htmlspecialchars($isTH ? $p['title_th'] : $p['title_en']) ?></h3>
-            </a>
-          <?php endforeach; ?>
+        <div class="travel-grid-pages">
+          <div class="travel-grid-track">
+            <?php foreach ($placePages as $pageIndex => $pagePlaces): $onPage = $pageIndex === 0; ?>
+              <div class="travel-grid-page<?= $onPage ? ' is-active' : '' ?>" data-page="<?= $pageIndex ?>"<?= $onPage ? '' : ' inert aria-hidden="true"' ?>>
+                <div class="travel-grid">
+                  <?php foreach ($pagePlaces as $p): ?>
+                    <a class="travel-card" href="#moments" data-country="<?= $key ?>" data-place="<?= htmlspecialchars($p['id']) ?>"
+                       aria-label="<?= htmlspecialchars($isTH ? $p['title_th'] : $p['title_en']) ?>">
+                      <figure class="travel-card-media">
+                        <img src="<?= htmlspecialchars($p['images'][0]) ?>"
+                             alt="<?= htmlspecialchars($isTH ? $p['alt_th'] : $p['alt_en']) ?>"
+                             width="800" height="600" loading="lazy">
+                        <span class="travel-card-date"><span class="travel-card-month"><?= htmlspecialchars($p['date'][0]) ?></span><span class="travel-card-day"><?= htmlspecialchars($p['date'][1]) ?></span></span>
+                      </figure>
+                      <h3 class="travel-card-title"><?= htmlspecialchars($isTH ? $p['title_th'] : $p['title_en']) ?></h3>
+                    </a>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          </div>
         </div>
+
+        <?php if (count($placePages) > 1): ?>
+          <div class="travel-pager" data-country="<?= $key ?>">
+            <button class="travel-pager-btn travel-pager-prev" type="button" disabled aria-label="<?= $isTH ? 'หน้าก่อนหน้า' : 'Previous page' ?>">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <div class="travel-pager-dots">
+              <?php foreach ($placePages as $pageIndex => $pagePlaces): ?>
+                <button class="travel-pager-dot<?= $pageIndex === 0 ? ' is-active' : '' ?>" type="button" data-page="<?= $pageIndex ?>"
+                        aria-label="<?= htmlspecialchars(($isTH ? 'หน้า ' : 'Page ') . ($pageIndex + 1)) ?>"></button>
+              <?php endforeach; ?>
+            </div>
+            <button class="travel-pager-btn travel-pager-next" type="button" aria-label="<?= $isTH ? 'หน้าถัดไป' : 'Next page' ?>">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+          </div>
+        <?php endif; ?>
       </article>
     <?php endforeach; ?>
   </div>

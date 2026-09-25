@@ -1,6 +1,0 @@
-{
-  "files": ["includes/footer.php"],
-  "insertBefore": "</body>",
-  "commentSyntax": "html",
-  "cspChecked": true
-}

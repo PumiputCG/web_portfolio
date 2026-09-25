@@ -1,11 +1,4 @@
 <?php
-/**
- * Travel journal data — countries → places (images + bilingual copy).
- *
- * To add more photos to a place, append paths to its 'images' array.
- * The stage gallery shows clickable thumbnails automatically when a
- * place has 2+ images.
- */
 
 function getJournalCountries(): array {
   return [
@@ -20,8 +13,8 @@ function getJournalCountries(): array {
           'date'     => ['Apr', '08'],
           'title_th' => 'วัดเซนโซจิ',
           'title_en' => 'Senso-ji Temple',
-          'desc_th'  => 'วันแรกในโตเกียว ผมเริ่มต้นที่วัดเก่าแก่ที่สุดแห่งหนึ่งของเมือง แสงไฟยามค่ำคืนทำให้อาคารสีแดงดูโดดเด่นขึ้นมาก โคมไฟขนาดใหญ่และบรรยากาศเงียบลงกว่าตอนกลางวัน ทำให้ที่นี่เป็นจุดเริ่มต้นของทริปที่ผมจำได้ชัดที่สุด',
-          'desc_en'  => 'My first day in Tokyo began at one of the city\'s oldest temples. The night lights made the red buildings stand out, and with the giant lantern and a quieter atmosphere than daytime, this became the most memorable start to my trip.',
+          'desc_th'  => 'วันแรกที่มาถึงโตเกียว ผมก็แวะมาเที่ยววัดเซ็นโซจิเลยครับ ช่วงที่ไปเป็นตอนกลางคืนพอดี บรรยากาศสวยมาก โดยเฉพาะโคมไฟสีแดงขนาดใหญ่กับแสงไฟที่ส่องตามตัววัด คนก็ไม่เยอะเท่าตอนกลางวัน ทำให้เดินเล่นและถ่ายรูปได้แบบสบาย ๆ ผมใช้เวลาเดินชมบรรยากาศรอบ ๆ อยู่พักใหญ่ เป็นคืนแรกในโตเกียวที่ประทับใจมากครับ',
+          'desc_en'  => 'On my first day in Tokyo, I visited Sensoji Temple at night. The temple looked amazing with its giant red lantern and beautiful lights illuminating the buildings. It wasn\'t as crowded as during the day, so I could take my time walking around and taking photos. It was a really nice way to spend my first night in Tokyo.',
           'alt_th'   => 'อาซากุสะ วัดเซนโซจิ',
           'alt_en'   => 'Senso-ji Temple, Asakusa',
           'images'   => [
@@ -33,8 +26,8 @@ function getJournalCountries(): array {
           'date'     => ['Apr', '09'],
           'title_th' => 'สวนอุเอโนะ',
           'title_en' => 'Ueno Park',
-          'desc_th'  => 'ผมได้เดินเล่นในสวนอุเอโนะช่วงฤดูใบไม้ผลิ บ่อน้ำกว้าง เรือหงส์ และกิ่งซากุระที่ยื่นเข้ามาในภาพ ทำให้บรรยากาศกลางเมืองดูช้าลงกว่าปกติ เป็นช่วงเวลาสบาย ๆ ที่ได้หยุดพักและมองโตเกียวในมุมที่สงบกว่าเดิม',
-          'desc_en'  => 'I strolled through Ueno Park in spring, where the wide pond, swan boats, and cherry blossom branches framed the view. The city felt slower here — an easy moment to pause and see Tokyo from a calmer angle.',
+          'desc_th'  => 'ผมมีโอกาสได้มาเดินเล่นที่สวนอุเอโนะในช่วงฤดูใบไม้ผลิครับ ช่วงที่ไปมีดอกซากุระบานอยู่ตามทาง บรรยากาศดีมาก โดยเฉพาะบริเวณบ่อน้ำที่มีเรือหงส์ให้ปั่นเล่น ผมใช้เวลาเดินชมสวน ถ่ายรูป และนั่งพักผ่อนชมบรรยากาศไปเรื่อย ๆ เป็นอีกหนึ่งสถานที่ในโตเกียวที่ผมชอบมาก ใครที่อยากหาที่เดินเล่นสบาย ๆ ท่ามกลางธรรมชาติ ผมแนะนำให้ลองแวะมาครับ',
+          'desc_en'  => 'I had the chance to visit Ueno Park during spring, and the cherry blossoms were beautiful. I especially liked the pond with its swan boats and the peaceful atmosphere around the park. I spent some time walking around, taking photos, and just enjoying the scenery. It\'s a great place to slow down and take a break from the busy streets of Tokyo.',
           'alt_th'   => 'สวนอุเอโนะในฤดูใบไม้ผลิ',
           'alt_en'   => 'Ueno Park in spring',
           'images'   => [
@@ -46,8 +39,8 @@ function getJournalCountries(): array {
           'date'     => ['Apr', '10'],
           'title_th' => 'อากิฮาบาระ',
           'title_en' => 'Akihabara',
-          'desc_th'  => 'ผมได้มาเดินในย่านอากิฮาบาระ เมืองที่เต็มไปด้วยป้ายสีสัน ร้านเกม การ์ตูน อนิเมะ และเครื่องใช้ไฟฟ้า ทุกตึกเหมือนมีเรื่องราวของตัวเอง เป็นอีกด้านของโตเกียวที่สดใส คึกคัก และมีพลังมากกว่าที่คิด',
-          'desc_en'  => 'I walked through Akihabara, a district full of colorful signs, game arcades, manga, anime, and electronics. Every building seemed to have its own story — a bright, lively side of Tokyo with more energy than I expected.',
+          'desc_th'  => 'วันนี้ผมมาเดินเล่นที่ย่านอากิฮาบาระครับ ที่นี่เต็มไปด้วยร้านเกม ร้านขายการ์ตูน อนิเมะ และอุปกรณ์อิเล็กทรอนิกส์ เดินไปทางไหนก็เจอแต่ตึกที่มีป้ายสีสันสดใสเต็มไปหมด ผมใช้เวลาเดินสำรวจร้านต่าง ๆ และถ่ายรูปบรรยากาศไปเรื่อย ๆ เป็นย่านที่คึกคักและมีอะไรให้ดูเยอะมาก โดยเฉพาะใครที่ชอบเกมหรืออนิเมะ ผมว่าน่าจะเดินเที่ยวกันได้ทั้งวันเลยครับ',
+          'desc_en'  => 'Today, I explored Akihabara, one of the most exciting neighborhoods in Tokyo. The streets were packed with gaming stores, anime shops, electronics, and colorful billboards everywhere. I spent my time walking around, checking out different stores, and taking photos. If you\'re into gaming or anime, you could easily spend an entire day here without getting bored.',
           'alt_th'   => 'ย่านอากิฮาบาระกลางวัน',
           'alt_en'   => 'Akihabara district by day',
           'images'   => [
@@ -59,8 +52,8 @@ function getJournalCountries(): array {
           'date'     => ['Apr', '11'],
           'title_th' => 'ชิบูย่า',
           'title_en' => 'Shibuya',
-          'desc_th'  => 'ผมได้มายืนอยู่ท่ามกลางแสงไฟของชิบูย่ายามค่ำคืน ผู้คนจำนวนมากเดินผ่านกันไปมาใต้ป้ายไฟขนาดใหญ่ พื้นถนนที่สะท้อนแสงหลังฝนตกทำให้เมืองดูมีชีวิตมากขึ้น เป็นโมเมนต์ที่ทำให้รู้สึกถึงพลังของโตเกียวจริง ๆ',
-          'desc_en'  => 'I stood amid the lights of Shibuya at night, as crowds crossed beneath the giant screens. The streets, still glistening after the rain, made the city feel even more alive — a moment that let me truly feel the energy of Tokyo.',
+          'desc_th'  => 'คืนนี้ผมได้มาเดินเล่นที่ย่านชิบูย่าครับ บรรยากาศตอนกลางคืนคึกคักมาก ผู้คนเดินกันเต็มถนน โดยเฉพาะบริเวณห้าแยกชิบูย่าที่มีคนเดินข้ามถนนพร้อมกันเยอะมาก หลังฝนตกพื้นถนนก็สะท้อนแสงไฟจากตึกและป้ายโฆษณารอบ ๆ สวยไปอีกแบบ ผมเดินเล่น ถ่ายรูป และเก็บบรรยากาศไปเรื่อย ๆ เป็นอีกหนึ่งคืนในโตเกียวที่ผมชอบมากครับ',
+          'desc_en'  => 'Tonight, I went for a walk around Shibuya, and the atmosphere was incredible. The streets were full of people, especially at the famous Shibuya Crossing, where hundreds of people crossed the road at the same time. It had just rained, so the neon lights and giant billboards reflected beautifully on the wet streets. I spent the evening walking around and taking photos. Definitely one of my favorite nights in Tokyo.',
           'alt_th'   => 'สี่แยกชิบูย่ายามค่ำคืน',
           'alt_en'   => 'Shibuya Crossing at night',
           'images'   => [
@@ -72,8 +65,8 @@ function getJournalCountries(): array {
           'date'     => ['Apr', '12'],
           'title_th' => 'โตเกียวสกายทรี',
           'title_en' => 'Tokyo Skytree',
-          'desc_th'  => 'ผมได้แวะมาชมโตเกียวสกายทรีในวันที่ท้องฟ้าครึ้ม หอคอยสูงตั้งตระหง่านอยู่กลางเมือง แม้อากาศจะไม่สดใสมาก แต่ความสูงและโครงสร้างของสกายทรียังทำให้รู้สึกว่าโตเกียวเป็นเมืองที่ยิ่งใหญ่มากเมื่อได้มองจากข้างล่าง',
-          'desc_en'  => 'I visited Tokyo Skytree on a cloudy day, the tall tower standing proud in the middle of the city. Even without bright skies, its height and structure made Tokyo feel like a truly grand city when seen from below.',
+          'desc_th'  => 'วันนี้ผมแวะมาชมโตเกียวสกายทรีครับ วันที่ไปท้องฟ้าค่อนข้างครึ้ม แต่พอได้มายืนมองหอคอยจากข้างล่างจริง ๆ ก็รู้สึกว่ามันสูงกว่าที่คิดไว้เยอะมาก ผมเดินเล่นแถว ๆ นั้นและถ่ายรูปเก็บบรรยากาศไว้ ถึงอากาศจะไม่ค่อยเป็นใจ แต่ก็ได้เห็นโตเกียวสกายทรีในอีกบรรยากาศหนึ่งที่สวยไปคนละแบบครับ',
+          'desc_en'  => 'Today, I stopped by Tokyo Skytree. The weather was pretty cloudy, but seeing the tower up close was still amazing. Standing right beneath it made me realize just how tall it actually is. I spent some time walking around the area and taking photos. Even though the weather wasn\'t perfect, it was still a great experience to finally see one of Tokyo\'s most famous landmarks in person.',
           'alt_th'   => 'โตเกียวสกายทรีในวันฟ้าครึ้ม',
           'alt_en'   => 'Tokyo Skytree on a cloudy day',
           'images'   => [
@@ -85,8 +78,8 @@ function getJournalCountries(): array {
           'date'     => ['Apr', '13'],
           'title_th' => 'ภูเขาไฟฟูจิ',
           'title_en' => 'Mount Fuji',
-          'desc_th'  => 'วันท้าย ๆ ของทริป ผมเดินทางออกนอกโตเกียวเพื่อไปเห็นภูเขาไฟฟูจิด้วยตาตัวเอง ฟูจิตั้งอยู่ไกล ๆ เหนือเมืองและดอกซากุระในวันที่ฟ้าใส เป็นภาพที่ทำให้เข้าใจเลยว่าทำไมหลายคนถึงอยากกลับมาญี่ปุ่นอีกครั้ง',
-          'desc_en'  => 'Near the end of the trip, I traveled out of Tokyo to see Mount Fuji with my own eyes. Standing far in the distance above the town and the cherry blossoms on a clear day, it was the image that made me understand why so many people long to return to Japan.',
+          'desc_th'  => 'ช่วงท้าย ๆ ของทริป ผมมีโอกาสเดินทางออกจากโตเกียวเพื่อไปชมภูเขาไฟฟูจิครับ โชคดีมากที่วันที่ไปท้องฟ้าแจ่มใส ทำให้มองเห็นภูเขาไฟฟูจิได้อย่างชัดเจน แถมยังมีดอกซากุระบานอยู่ด้วย ผมใช้เวลาเดินเล่น ถ่ายรูป และชมวิวอยู่พักใหญ่ พอได้มาเห็นฟูจิด้วยตาตัวเองจริง ๆ ก็รู้สึกว่าสวยกว่าในรูปที่เคยเห็นมาก เป็นอีกหนึ่งสถานที่ที่ประทับใจที่สุดในทริปญี่ปุ่นครั้งนี้ครับ',
+          'desc_en'  => 'Towards the end of my trip, I traveled outside Tokyo to see Mount Fuji. I was really lucky because the weather was perfect that day. The sky was clear, and I could see the mountain beautifully, with cherry blossoms blooming nearby. I spent quite a while walking around, enjoying the view, and taking photos. Seeing Mount Fuji in person was even more amazing than I expected. It was definitely one of the highlights of my trip to Japan.',
           'alt_th'   => 'ภูเขาไฟฟูจิในวันฟ้าใส',
           'alt_en'   => 'Mount Fuji on a clear day',
           'images'   => [
@@ -103,12 +96,25 @@ function getJournalCountries(): array {
       'page'     => 'journal-thailand.php',
       'places'   => [
         [
+          'id'       => 'khaoyai',
+          'date'     => ['Jan', '18'],
+          'title_th' => 'เขาใหญ่',
+          'title_en' => 'Khao Yai',
+          'desc_th'  => 'ผมเริ่มต้นปีด้วยการไปเที่ยวเขาใหญ่ครับ ช่วงที่ไปอากาศกำลังเย็นเลย มีหมอกบาง ๆ ปกคลุมอยู่ตามภูเขาและป่าไม้ บรรยากาศดีมากจนไม่อยากกลับเลยครับ ยิ่งตอนเช้าที่อากาศเย็นจนต้องใส่เสื้อกันหนาว ยิ่งรู้สึกเหมือนได้มาเที่ยวต่างจังหวัดไกล ๆ ทั้งที่จริงแล้วอยู่ไม่ไกลจากกรุงเทพฯ เลย',
+          'desc_en'  => 'I started the year with a trip to Khao Yai. The weather was really nice and cool, with a little mist covering the mountains and forest. I especially loved the chilly mornings when I actually needed a jacket. It felt like I was somewhere far away from the city, even though it\'s just a short trip from Bangkok.',
+          'alt_th'   => 'เขาใหญ่ นครราชสีมา',
+          'alt_en'   => 'Khao Yai National Park',
+          'images'   => [
+            'assets/images/journal/thailand/เขาใหญ่.jpg',
+          ],
+        ],
+        [
           'id'       => 'watarun',
           'date'     => ['Mar', '15'],
           'title_th' => 'วัดอรุณราชวราราม',
           'title_en' => 'Wat Arun',
-          'desc_th'  => 'ผมได้เดินทางไปชมวัดอรุณในช่วงแสงสวยของวัน พระปรางค์สูงริมแม่น้ำเจ้าพระยาดูโดดเด่นมาก รายละเอียดของลวดลายและสีสันบนองค์พระปรางค์ทำให้รู้สึกว่านี่คือหนึ่งในภาพจำของกรุงเทพฯ ที่ควรได้มาเห็นด้วยตัวเอง',
-          'desc_en'  => 'I visited Wat Arun during a beautiful moment of the day, when the light made the riverside temple feel even more special. Its tall prang, detailed patterns, and warm colors made this place one of the most memorable views of Bangkok for me.',
+          'desc_th'  => 'วันนี้ผมแวะมาเที่ยววัดอรุณครับ พอได้มาเห็นองค์พระปรางค์ใกล้ ๆ จริง ๆ ก็รู้สึกว่าสวยกว่าที่เคยเห็นในรูปเยอะเลย โดยเฉพาะลวดลายและรายละเอียดเล็ก ๆ บนองค์พระปรางค์ที่ตกแต่งไว้อย่างสวยงาม ช่วงที่ไปแสงกำลังดีพอดี ผมเลยใช้เวลาเดินชมรอบ ๆ วัดและถ่ายรูปเก็บบรรยากาศไว้ เป็นอีกหนึ่งสถานที่ในกรุงเทพฯ ที่อยากแนะนำให้ลองมาเที่ยวกันครับ',
+          'desc_en'  => 'Today, I stopped by Wat Arun. Seeing the temple up close was even more impressive than looking at pictures. The details and patterns on the main prang were beautiful, especially with the sunlight hitting them at just the right time. I spent some time walking around and taking photos. Definitely a place worth visiting if you\'re in Bangkok.',
           'alt_th'   => 'วัดอรุณราชวราราม กรุงเทพฯ',
           'alt_en'   => 'Wat Arun, Bangkok',
           'images'   => [
@@ -120,8 +126,8 @@ function getJournalCountries(): array {
           'date'     => ['Mar', '18'],
           'title_th' => 'ศาลเจ้าไต้ฮงกงหยกขาว',
           'title_en' => 'Tai Hong Kong White Jade Shrine',
-          'desc_th'  => 'ผมได้มาเดินชมศาลเจ้าสถาปัตยกรรมจีนสีขาวที่ตัดกับประตูสีแดงและลวดลายสีทอง บรรยากาศค่อนข้างสงบกว่าที่คิด เป็นสถานที่ที่เหมาะกับการค่อย ๆ เดินดูรายละเอียดและเก็บความรู้สึกระหว่างทาง',
-          'desc_en'  => 'I visited this white Chinese-style shrine and was drawn to the contrast between the pale stone, red doors, and golden details. The atmosphere felt calm and quiet, making it a nice place to slowly observe the architecture and enjoy the moment.',
+          'desc_th'  => 'วันนี้ผมมีโอกาสแวะมาที่ศาลเจ้าไต้ฮงกงหยกขาวครับ สิ่งแรกที่สะดุดตาเลยก็คือสถาปัตยกรรมจีนสีขาวที่ตัดกับประตูสีแดงและลวดลายสีทอง สวยและมีรายละเอียดเยอะมาก บรรยากาศภายในก็ค่อนข้างเงียบสงบ ผมเลยใช้เวลาเดินชมรอบ ๆ และถ่ายรูปตามมุมต่าง ๆ ใครที่ชอบสถาปัตยกรรมจีนหรืออยากหาสถานที่เดินเล่นถ่ายรูป ก็ลองแวะมาได้ครับ',
+          'desc_en'  => 'I stopped by the Tai Hong Kong White Jade Shrine today. The first thing that caught my attention was the beautiful white Chinese architecture, with its red doors and golden details. The place was surprisingly peaceful, so I took my time walking around and taking photos. If you enjoy Chinese architecture or photography, this is a lovely place to visit.',
           'alt_th'   => 'ศาลเจ้าไต้ฮงกงหยกขาว กรุงเทพฯ',
           'alt_en'   => 'Tai Hong Kong White Jade Shrine, Bangkok',
           'images'   => [
@@ -129,12 +135,38 @@ function getJournalCountries(): array {
           ],
         ],
         [
+          'id'       => 'talatnoi',
+          'date'     => ['Mar', '23'],
+          'title_th' => 'ตลาดน้อย',
+          'title_en' => 'Talat Noi',
+          'desc_th'  => 'วันนี้ผมมาเดินเล่นที่ตลาดน้อยครับ เป็นย่านเก่าของกรุงเทพฯ ที่มีอะไรให้ดูเยอะกว่าที่คิดมาก เดินเข้าไปตามตรอกเล็ก ๆ ก็จะเจอทั้งตึกเก่า ร้านค้า และภาพสตรีทอาร์ตตามกำแพง ผมชอบตรงที่แต่ละซอยมีมุมให้ถ่ายรูปไม่เหมือนกัน เดินไปเรื่อย ๆ ก็เจออะไรใหม่ ๆ ตลอด ใครที่ชอบถ่ายรูปหรืออยากลองมาเดินเที่ยวกรุงเทพฯ ในบรรยากาศที่แตกต่างจากห้างสรรพสินค้า ผมว่าย่านนี้น่าสนใจมากครับ',
+          'desc_en'  => 'Today, I explored Talat Noi, one of Bangkok\'s old neighborhoods. There\'s so much to see here, from narrow alleys and old buildings to street art hidden around different corners. I really enjoyed wandering around without a particular plan, discovering new spots and taking photos along the way. If you enjoy photography or want to explore a different side of Bangkok, this neighborhood is worth checking out.',
+          'alt_th'   => 'ตลาดน้อย กรุงเทพฯ',
+          'alt_en'   => 'Talat Noi, Bangkok',
+          'images'   => [
+            'assets/images/journal/thailand/ตลาดน้อย.png',
+          ],
+        ],
+        [
+          'id'       => 'talatbangluang',
+          'date'     => ['Mar', '29'],
+          'title_th' => 'ตลาดบางหลวง',
+          'title_en' => 'Talat Bang Luang',
+          'desc_th'  => 'วันนี้ผมลองเปลี่ยนบรรยากาศมานั่งเรือเที่ยวคลองบางหลวงครับ ระหว่างทางได้เห็นบ้านไม้เก่า ๆ ริมคลองและวิถีชีวิตของคนในชุมชนที่ยังคงมีเสน่ห์แบบดั้งเดิม พอมาถึงก็ได้เดินเล่นชมตลาดและบรรยากาศริมน้ำ ที่นี่ค่อนข้างเงียบสงบ ไม่ได้วุ่นวายเหมือนตลาดท่องเที่ยวหลาย ๆ แห่ง เป็นทริปสบาย ๆ ที่ไม่ต้องรีบร้อนอะไรเลยครับ',
+          'desc_en'  => 'Today, I decided to take a boat trip to Khlong Bang Luang for a change of scenery. Along the way, I passed old wooden houses and got a glimpse of everyday life in the riverside community. Once I arrived, I spent some time walking around the market and enjoying the atmosphere. It wasn\'t too crowded, which made it a really relaxing little trip.',
+          'alt_th'   => 'ตลาดบางหลวง ธนบุรี',
+          'alt_en'   => 'Talat Bang Luang, Thonburi',
+          'images'   => [
+            'assets/images/journal/thailand/ตลาดบางหลวง.png',
+          ],
+        ],
+        [
           'id'       => 'kohloi',
           'date'     => ['Apr', '02'],
           'title_th' => 'เกาะลอย ศรีราชา',
           'title_en' => 'Koh Loi',
-          'desc_th'  => 'ผมได้แวะมาที่เกาะลอยในช่วงเย็น เป็นมุมทะเลที่มีทั้งแสงอาทิตย์ เรือ และทางเดินริมทะเลอยู่ในภาพเดียวกัน บรรยากาศไม่ได้เงียบจนเหงา แต่ก็ยังมีจังหวะให้ได้นั่งมองทะเลแบบสบาย ๆ',
-          'desc_en'  => 'I stopped by Koh Loi in the evening, where the sunlight, boats, and seaside walkway came together in one view. It was not completely quiet, but it still had a peaceful rhythm that made me want to slow down and watch the sea.',
+          'desc_th'  => 'ช่วงเย็นวันนี้ผมแวะมาที่เกาะลอย ศรีราชาครับ บรรยากาศริมทะเลช่วงเย็นดีมาก มีทั้งเรือที่จอดอยู่และแสงอาทิตย์ที่กำลังตกกระทบผิวน้ำ ผมเดินเล่นตามทางริมทะเลแล้วก็หามุมนั่งชมวิวสักพัก ลมทะเลพัดมาเรื่อย ๆ รู้สึกสบายมาก เป็นสถานที่ที่เหมาะกับการแวะมาพักผ่อนช่วงเย็นโดยไม่ต้องวางแผนอะไรมากเลยครับ',
+          'desc_en'  => 'I stopped by Koh Loi in Si Racha this evening. The seaside atmosphere was really nice, with boats nearby and the afternoon sunlight reflecting off the water. I walked along the waterfront and found a spot to sit and enjoy the view for a while. The sea breeze made it a perfect place to relax after a long day.',
           'alt_th'   => 'เกาะลอย ศรีราชา ชลบุรี',
           'alt_en'   => 'Koh Loi, Si Racha, Chonburi',
           'images'   => [
@@ -142,12 +174,38 @@ function getJournalCountries(): array {
           ],
         ],
         [
+          'id'       => 'fokuangshan',
+          'date'     => ['Apr', '06'],
+          'title_th' => 'วัดโฝวกวงซัน',
+          'title_en' => 'Wat Fo Guang Shan',
+          'desc_th'  => 'ระหว่างมาเที่ยวศรีราชา ผมมีโอกาสแวะมาที่วัดโฝวกวงซันครับ เป็นวัดจีนที่มีสถาปัตยกรรมสวยและยิ่งใหญ่มาก โดยเฉพาะองค์พระสีทองที่มองเห็นได้อย่างเด่นชัด พอเดินเข้าไปข้างในก็รู้สึกว่าบรรยากาศค่อนข้างสงบ ลานวัดกว้างและมีรายละเอียดของงานแกะสลักให้เดินชมเยอะเลย ผมใช้เวลาเดินดูรอบ ๆ และถ่ายรูปเก็บไว้หลายมุม เป็นอีกหนึ่งสถานที่ที่ประทับใจในทริปนี้ครับ',
+          'desc_en'  => 'During my trip to Si Racha, I stopped by Wat Fo Guang Shan. The Chinese-style architecture was impressive, especially the large golden Buddha statue. The temple grounds were spacious and peaceful, with beautiful carvings and details throughout the area. I spent some time walking around and taking photos. It was one of the memorable stops on this trip.',
+          'alt_th'   => 'วัดโฝวกวงซัน ชลบุรี',
+          'alt_en'   => 'Wat Fo Guang Shan, Chonburi',
+          'images'   => [
+            'assets/images/journal/thailand/วัดโฝวกวงซัน.png',
+          ],
+        ],
+        [
+          'id'       => 'phrapradaeng',
+          'date'     => ['Apr', '20'],
+          'title_th' => 'อำเภอพระประแดง',
+          'title_en' => 'Phra Pradaeng',
+          'desc_th'  => 'วันนี้ผมเปลี่ยนบรรยากาศจากการขับรถเที่ยวมาลองปั่นจักรยานที่พระประแดงครับ ผมเอาจักรยานขึ้นเรือข้ามฟากจากฝั่งกรุงเทพฯ พอข้ามแม่น้ำมาแล้วบรรยากาศเปลี่ยนไปเลย จากตึกสูงและถนนที่เต็มไปด้วยรถ กลายเป็นถนนเล็ก ๆ ที่มีต้นไม้ร่มรื่นตลอดทาง ผมปั่นจักรยานชมบรรยากาศไปเรื่อย ๆ แบบไม่ต้องรีบร้อน เป็นอีกหนึ่งทริปใกล้กรุงเทพฯ ที่สนุกและได้พักผ่อนไปในตัวครับ',
+          'desc_en'  => 'Today, I decided to do something different and went cycling in Phra Pradaeng. I took my bike on a ferry from Bangkok, and the atmosphere completely changed once I crossed the river. Instead of busy roads and tall buildings, I found quiet streets surrounded by trees. I spent my time cycling around and enjoying the scenery without rushing anywhere. Such a nice little escape from the city.',
+          'alt_th'   => 'พระประแดง สมุทรปราการ',
+          'alt_en'   => 'Phra Pradaeng, Samut Prakan',
+          'images'   => [
+            'assets/images/journal/thailand/อำเภอพระประแดง.png',
+          ],
+        ],
+        [
           'id'       => 'pattaya',
           'date'     => ['Apr', '28'],
           'title_th' => 'หาดพัทยา ชลบุรี',
           'title_en' => 'Pattaya Beach',
-          'desc_th'  => 'ผมได้เห็นอีกมุมหนึ่งของพัทยาจากมุมสูง ทะเลสีฟ้า หาดทราย และร่มชายหาดที่เรียงกันทำให้ภาพนี้ดูสดใสกว่าที่คิด เป็นพัทยาในวันที่แดดดีและให้ความรู้สึกเหมาะกับการพักผ่อนมากกว่าความวุ่นวาย',
-          'desc_en'  => 'I saw Pattaya from a higher viewpoint, where the blue sea, sandy beach, and rows of beach umbrellas created a bright and relaxing scene. It showed me a softer side of Pattaya, one that felt more peaceful than busy.',
+          'desc_th'  => 'วันนี้ผมมาเที่ยวพัทยาครับ แต่รอบนี้ได้มีโอกาสมองวิวชายหาดจากมุมสูงแทน พอมองลงไปก็เห็นทั้งทะเลสีฟ้า หาดทราย และร่มชายหาดที่เรียงกันเป็นแถว สวยกว่าที่คิดไว้เยอะเลยครับ ยิ่งวันที่ไปแดดดีและท้องฟ้าแจ่มใสด้วย ทำให้บรรยากาศดูสดใสมาก ปกติพอพูดถึงพัทยาก็จะนึกถึงความคึกคัก แต่พอได้มองจากมุมนี้ก็รู้สึกว่าเป็นเมืองที่มีวิวสวยและน่าพักผ่อนเหมือนกันครับ',
+          'desc_en'  => 'Today, I visited Pattaya and got to see the beach from a higher viewpoint. Looking down, I could see the blue sea, sandy beach, and rows of colorful beach umbrellas. The weather was perfect, with plenty of sunshine and clear skies. I usually think of Pattaya as a busy city, but seeing it from this angle made me appreciate how beautiful the coastline really is.',
           'alt_th'   => 'หาดพัทยา ชลบุรี',
           'alt_en'   => 'Pattaya Beach, Chonburi',
           'images'   => [
@@ -159,8 +217,8 @@ function getJournalCountries(): array {
           'date'     => ['May', '10'],
           'title_th' => 'เกาะเกร็ด',
           'title_en' => 'Koh Kret',
-          'desc_th'  => 'ผมได้มานั่งกินข้าวริมแม่น้ำที่เกาะเกร็ด มองเรือและวิถีชีวิตสองฝั่งน้ำผ่านโต๊ะอาหารตรงหน้า เป็นช่วงเวลาง่าย ๆ ที่ทำให้รู้สึกว่าไม่ต้องเดินทางไกล ก็เจอบรรยากาศดี ๆ ใกล้กรุงเทพฯ ได้เหมือนกัน',
-          'desc_en'  => 'I spent time having a meal by the river at Koh Kret, watching boats and local life move along both sides of the water. It was a simple moment that reminded me that a calm and meaningful trip can be found close to Bangkok too.',
+          'desc_th'  => 'วันนี้ผมแวะมาเที่ยวเกาะเกร็ดครับ แต่แทนที่จะรีบเดินเที่ยว ผมเลือกมานั่งกินข้าวริมแม่น้ำก่อน บรรยากาศดีมากครับ ระหว่างกินข้าวก็นั่งดูเรือที่แล่นผ่านไปมาและมองวิถีชีวิตของผู้คนสองฝั่งแม่น้ำไปด้วย เป็นช่วงเวลาที่รู้สึกสบาย ๆ ไม่ต้องรีบร้อนอะไร บางทีการได้ออกมาเที่ยวใกล้ ๆ กรุงเทพฯ แล้วนั่งกินข้าวชมวิวแบบนี้ก็เป็นการพักผ่อนที่ดีเหมือนกันครับ',
+          'desc_en'  => 'Today, I went to Koh Kret and decided to start my visit with a meal by the river. It was such a relaxing spot. I enjoyed my food while watching boats pass by and seeing everyday life along the riverbanks. Sometimes, you don\'t need to travel far or plan a big trip to have a good day. A nice meal with a beautiful view is more than enough.',
           'alt_th'   => 'เกาะเกร็ด นนทบุรี',
           'alt_en'   => 'Koh Kret, Nonthaburi',
           'images'   => [
@@ -172,8 +230,8 @@ function getJournalCountries(): array {
           'date'     => ['May', '22'],
           'title_th' => 'เขาฉลาก',
           'title_en' => 'Khao Chalak',
-          'desc_th'  => 'ผมได้ขึ้นมาชมวิวเมืองและทะเลจากมุมสูงในช่วงพลบค่ำ แสงไฟด้านล่างค่อย ๆ สว่างขึ้นพร้อมกับสีของท้องฟ้าที่เปลี่ยนไป ธงไทยด้านหน้าทำให้ภาพนี้มีความรู้สึกของการเดินทางและความทรงจำมากขึ้น',
-          'desc_en'  => 'I went up to Khao Chalak to see the city and the sea from above during dusk. As the lights below slowly appeared and the sky changed color, the Thai flag in the foreground made the whole view feel even more memorable.',
+          'desc_th'  => 'วันนี้ผมขึ้นมาชมวิวที่เขาฉลากช่วงเย็นครับ จากข้างบนสามารถมองเห็นทั้งตัวเมืองและทะเลได้กว้างมาก ช่วงที่ไปเป็นเวลาพลบค่ำพอดี ได้เห็นแสงไฟจากตัวเมืองค่อย ๆ สว่างขึ้นพร้อมกับท้องฟ้าที่เริ่มเปลี่ยนสี ผมยืนชมวิวและถ่ายรูปอยู่พักใหญ่ โดยเฉพาะมุมที่มีธงชาติไทยอยู่ด้านหน้า เป็นภาพที่ผมชอบมากและอยากเก็บไว้เป็นความทรงจำของทริปนี้ครับ',
+          'desc_en'  => 'This evening, I went up to Khao Chalak to enjoy the view of the city and the sea. I arrived around sunset, just as the sky started changing colors and the city lights slowly came on. I spent some time taking photos and enjoying the view, especially the spot with the Thai flag in the foreground. It turned out to be one of my favorite photos from this trip.',
           'alt_th'   => 'เขาฉลาก ชลบุรี',
           'alt_en'   => 'Khao Chalak, Chonburi',
           'images'   => [
@@ -185,12 +243,38 @@ function getJournalCountries(): array {
           'date'     => ['May', '25'],
           'title_th' => 'แหลมปู่เจ้า',
           'title_en' => 'Laem Pu Chao',
-          'desc_th'  => 'ผมได้มาชมวิวทะเลจากมุมสูงที่แหลมปู่เจ้า มองเห็นเกาะเล็ก ๆ แนวเขื่อน และผืนน้ำกว้างอยู่ไกลออกไป เมฆก้อนใหญ่กับสีฟ้าของทะเลทำให้ภาพนี้รู้สึกกว้าง สงบ และน่าจดจำ',
-          'desc_en'  => 'I visited Laem Pu Chao and looked out over the sea from a high viewpoint. The small islands, long breakwater, wide water, and dramatic clouds made this view feel open, peaceful, and unforgettable.',
+          'desc_th'  => 'วันนี้ผมได้แวะมาชมวิวที่แหลมปู่เจ้าครับ พอขึ้นมาถึงจุดชมวิวก็เห็นทะเลกว้างสุดสายตา มีเกาะเล็ก ๆ และแนวเขื่อนทอดยาวอยู่ไกล ๆ วันที่ไปท้องฟ้าสวยมาก มีเมฆก้อนใหญ่ลอยอยู่เหนือทะเล ผมเลยใช้เวลายืนชมวิวและถ่ายรูปอยู่ตรงนี้สักพัก เป็นอีกหนึ่งจุดชมวิวที่ได้มองเห็นทะเลจากมุมสูงและรู้สึกว่าคุ้มค่ากับการแวะมามากครับ',
+          'desc_en'  => 'Today, I stopped by Laem Pu Chao to enjoy the sea view. From the viewpoint, I could see the wide-open sea, small islands, and a long breakwater stretching into the distance. The sky looked amazing that day, with huge clouds floating above the water. I stayed for a while to take photos and enjoy the scenery. It was definitely worth the stop.',
           'alt_th'   => 'แหลมปู่เจ้า ชลบุรี',
           'alt_en'   => 'Laem Pu Chao, Chonburi',
           'images'   => [
             'assets/images/journal/thailand/แหลมปู่เจ้า.png',
+          ],
+        ],
+        [
+          'id'       => 'sealife',
+          'date'     => ['Jun', '12'],
+          'title_th' => 'ซีไลฟ์ แบงคอก',
+          'title_en' => 'Sea Life Bangkok Ocean World',
+          'desc_th'  => 'วันนี้ฝนตกแทบทั้งวันเลยครับ ผมก็เลยเปลี่ยนแผนมาเดินเที่ยวซีไลฟ์ที่สยามพารากอนแทน ข้างในมีสัตว์ทะเลให้ดูเยอะมาก แต่ที่ผมชอบที่สุดน่าจะเป็นอุโมงค์กระจกใต้น้ำที่มีฝูงปลาและปลากระเบนว่ายผ่านอยู่เหนือหัว รู้สึกเหมือนได้เดินอยู่ใต้ทะเลจริง ๆ จากตอนแรกที่แค่หาที่เที่ยวหลบฝน กลายเป็นว่าเดินดูปลาเพลินกว่าที่คิดไว้เยอะเลยครับ',
+          'desc_en'  => 'It was raining almost all day, so I changed my plans and decided to visit Sea Life Bangkok Ocean World instead. There were so many marine animals to see, but my favorite part was definitely the underwater glass tunnel. Watching fish and rays swim right above my head was amazing. What started as a backup plan for a rainy day turned into a really enjoyable afternoon.',
+          'alt_th'   => 'ซีไลฟ์ แบงคอก โอเชี่ยนเวิลด์',
+          'alt_en'   => 'Sea Life Bangkok Ocean World',
+          'images'   => [
+            'assets/images/journal/thailand/ซีไลฟ์แบงคอก.jpg',
+          ],
+        ],
+        [
+          'id'       => 'suanluangr9',
+          'date'     => ['Jun', '21'],
+          'title_th' => 'สวนหลวง ร.9',
+          'title_en' => 'Suan Luang Rama IX',
+          'desc_th'  => 'วันนี้ผมมาเดินเล่นที่สวนหลวง ร.9 ครับ ช่วงนี้เป็นต้นฤดูฝนพอดี ต้นไม้ในสวนเลยเขียวชอุ่มมาก แถมอากาศหลังฝนตกก็สดชื่นสุด ๆ ผมเดินเล่นรอบ ๆ ทะเลสาบ ชมวิวและถ่ายรูปไปเรื่อย ๆ สวนที่นี่กว้างมากครับ เดินได้เป็นชั่วโมงเลยโดยไม่รู้สึกเบื่อ ใครที่อยากหาที่เดินเล่น ออกกำลังกาย หรือพักผ่อนในวันหยุด ผมว่าที่นี่เหมาะมากครับ',
+          'desc_en'  => 'Today, I went for a walk at Suan Luang Rama IX. It was the beginning of the rainy season, so everything looked really green and fresh. The air felt especially nice after the rain. I spent some time walking around the lake, enjoying the scenery, and taking photos. The park is huge, and you can easily spend hours exploring it. A great place for a relaxing walk or some exercise on a day off.',
+          'alt_th'   => 'สวนหลวง ร.9 กรุงเทพฯ',
+          'alt_en'   => 'Suan Luang Rama IX Park, Bangkok',
+          'images'   => [
+            'assets/images/journal/thailand/สวนหลวงร9.png',
           ],
         ],
       ],

@@ -1,7 +1,4 @@
 <?php
-/**
- * Shared personal information for the active Home experience.
- */
 
 require_once __DIR__ . '/lang.php';
 
@@ -18,7 +15,7 @@ function getProfile(): array {
     'social' => [
       'linkedin' => 'https://www.linkedin.com/feed/',
       'instagram' => 'https://www.instagram.com/cgame._',
-      'x' => 'https://x.com/zextinctc8405?s=11',
+      'github' => 'https://github.com/PumiputCG',
     ],
   ];
 }
