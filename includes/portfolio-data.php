@@ -256,7 +256,6 @@ function getActivities(): array {
         activityImage('mentor-1.jpg', 900, 1200, 'นักศึกษาฝึกงานนั่งทำงานในห้องประชุมพร้อมจอแสดงแผนงาน', 'The intern working in a meeting room with the project plan on screen'),
         activityImage('mentor-2.jpg', 900, 1200, 'ประชุมออนไลน์เรื่องโปรเจค DCC Hub ผ่านโน้ตบุ๊ก', 'An online DCC Hub project meeting on a laptop'),
         activityImage('mentor-3.jpg', 900, 1200, 'อธิบายขั้นตอนการทำงานของระบบบนไวท์บอร์ด', 'Explaining the system workflow on a whiteboard'),
-        activityImage('mentor-4.jpg', 900, 1200, 'นักศึกษาฝึกงานนำเสนอขั้นตอนการทำงานบนจอ', 'The intern presenting the work process on screen'),
       ],
     ],
     [
